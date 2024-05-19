@@ -1,4 +1,2 @@
-#!/bin/zsh
-alias zshconfig="code ~/.zshrc"
+alias zshconfig="$EDITOR ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-

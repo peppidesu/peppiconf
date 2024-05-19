@@ -1,4 +1,3 @@
-#!/bin/zsh
 # colors
 export LS_COLORS="ow=03;94:no=02;37:fi=00;93:di=01;34:ln=04;36:pi=40;33:so=01;35:bd=43;93"
 

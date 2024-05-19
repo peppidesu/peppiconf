@@ -1,4 +1,3 @@
-#!/bin/zsh
 function sshpubkey() {
   if [ "$1" = "rsa" ]; then
     if [ -f "$HOME/.ssh/id_rsa.pub" ]; then
