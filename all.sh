@@ -22,3 +22,6 @@ alias ssh="kitten ssh"
 
 # used to forward ssh-agent socket
 export SSH_AUTH_SOCK=/run/user/1000/ssh-agent.socket
+
+# auto update
+(git -C $(dirname "$0") pull &) > /dev/null
