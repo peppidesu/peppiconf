@@ -24,4 +24,4 @@ alias ssh="kitten ssh"
 export SSH_AUTH_SOCK=/run/user/1000/ssh-agent.socket
 
 # auto update
-(git -C $(dirname "$0") pull &) > /dev/null
+alias syncconf="git -C $(dirname "$0") pull"
