@@ -8,4 +8,10 @@ export VISUAL=nano
 export EDITOR=nano
 export PAGER=most
 
-# alias ssh="kitty +kitten ssh"
+alias ssh="kitten ssh"
+
+export VISUAL=code
+export EDITOR=code
+export PAGER=less
+
+# alias clip="gpaste-client"
