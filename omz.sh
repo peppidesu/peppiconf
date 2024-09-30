@@ -21,6 +21,9 @@ plugins=(
   docker 
   docker-compose
   archlinux
+  systemd
+  pnpm
+  node
 )
 
 source $ZSH/oh-my-zsh.sh

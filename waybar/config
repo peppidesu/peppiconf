@@ -1,0 +1,216 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 0,
+    "margin-top": 8,
+    "margin-left": 10,
+    "margin-right": 10,
+    "modules-left": [
+        "hyprland/workspaces",
+        "tray",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/spotify",
+        "custom/updates",
+        "custom/bluetooth",
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "temperature",
+        "battery"
+    ],
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<span><big>{:%Y %B}</big>\n\n{calendar}</span>",
+        "interval": 1,
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%Y-%m-%d %H:%M:%S}",
+        "calendar": {
+            "weeks-pos": "left",
+            "format": {
+                "today": "<span color='#FF6666'><u>{}</u></span>",
+                "weeks": "<span color='#707A8C'>{}</span>"
+            }
+        }
+    },
+    "cpu": {
+        "format": "cpu: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "mem: {}%",
+        "tooltip": false
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "reverse-scrolling": true
+    },
+    "battery": {
+        "states": {
+            "full": 100,
+            "good": 99,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% {icon}",
+        "format-plugged": "{capacity}% {icon}",
+        "format-alt": "{time} {icon}",
+        "interval": 1,
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": [
+            "󰂎",
+            "󰁻",
+            "󰁾",
+            "󰂀",
+            "󰁹"
+        ]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "hyprland/window": {
+        "max-length": 36
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰛳",
+        "tooltip-format": "ssid : {essid}\naddr : {ipaddr}/{cidr}\ngate : {gwaddr}\ndev  : {ifname}",
+        "format-linked": "󰛳",
+        "format-disconnected": "",
+        "format-alt": "{ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "󰂯 {icon} {volume}% {format_source}",
+        "format-bluetooth-muted": "󰂯 󰝟 {format_source}",
+        "format-muted": "󰝟 {format_source}",
+        "format-source": "󰍬",
+        "format-source-muted": "󰍭",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "󰄋",
+            "default": [
+                "󰕾",
+                "󰕾",
+                "󰕾"
+            ]
+        },
+        "on-click": "pavucontrol",
+        "reverse-scrolling": true
+    },
+    "custom/vpn": {
+        "format": "VPN ",
+        "exec": "echo '{\"class\": \"connected\"}'",
+        "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
+        "return-type": "json",
+        "interval": 5
+    },
+    "custom/bluetooth": {
+        "format": "󰂯",
+        "on-click": "blueberry"       
+    },
+    "custom/spotify": {
+        "format": "{icon} {}",
+        "escape": true,
+        "return-type": "json",
+        "max-length": 32,
+        "on-click": "spotify && hyprctl dispatch focuswindow Spotify",
+        "smooth-scrolling-threshold": 10,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
+        "exec-if": "pgrep spotify"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by": "id"
+    },
+    "custom/updates": {
+        "format": "{}",
+        "format-tooltip": "{}",
+        "on-click": "kitty -- paru -Syu",
+        "exec": "$HOME/.config/waybar/check-updates.sh",
+        "interval": 3600,
+        "signal": 8
+    }
+}

@@ -9,8 +9,7 @@ source "$(dirname "$0")/p10k.sh"
 source "$(dirname "$0")/omz.sh"
 source "$(dirname "$0")/lsd.sh"
 source "$(dirname "$0")/sshpubkey.sh"
-source "$(dirname "$0")/config_alias.sh"
-
+source "$(dirname "$0")/alias.sh"
 
 # default editors and pagers
 export VISUAL=nvim

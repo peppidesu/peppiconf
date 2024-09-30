@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Lock",
+    "exec": "swaylock",
+    "icon": "/home/peppidesu/.config/nwg-bar/system-lock-screen.svg"
+  },
+  {
+    "label": "Logout",
+    "exec": "hyprctl exit",
+    "icon": "/home/peppidesu/.config/nwg-bar/system-log-out.svg"
+  },
+  {
+    "label": "Suspend",
+    "exec": "systemctl -i suspend",
+    "icon": "/home/peppidesu/.config/nwg-bar/system-suspend.svg"
+  },
+  {
+    "label": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/home/peppidesu/.config/nwg-bar/system-reboot.svg"
+  },
+  {
+    "label": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/home/peppidesu/.config/nwg-bar/system-shutdown.svg"
+  }
+]
