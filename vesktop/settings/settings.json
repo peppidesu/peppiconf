@@ -3,7 +3,9 @@
     "autoUpdate": true,
     "autoUpdateNotification": true,
     "useQuickCss": true,
-    "themeLinks": [],
+    "themeLinks": [
+        "https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/flavors/midnight-vencord.theme.css"
+    ],
     "enabledThemes": [],
     "enableReactDevtools": false,
     "frameless": false,
@@ -294,9 +296,6 @@
         "PreviewMessage": {
             "enabled": false
         },
-        "PronounDB": {
-            "enabled": false
-        },
         "QuickMention": {
             "enabled": false
         },
@@ -555,6 +554,33 @@
         },
         "FullSearchContext": {
             "enabled": false
+        },
+        "AccountPanelServerProfile": {
+            "enabled": false
+        },
+        "AlwaysExpandRoles": {
+            "enabled": false
+        },
+        "ConsoleJanitor": {
+            "enabled": false
+        },
+        "CopyFileContents": {
+            "enabled": false
+        },
+        "MentionAvatars": {
+            "enabled": false
+        },
+        "NoMaskedUrlPaste": {
+            "enabled": false
+        },
+        "StickerPaste": {
+            "enabled": false
+        },
+        "VolumeBooster": {
+            "enabled": false
+        },
+        "UserMessagesPronouns": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -567,6 +593,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1727454166497
+        "settingsSyncVersion": 1729722195821
     }
 }

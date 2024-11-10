@@ -5,9 +5,8 @@
 }
 
 window#waybar {
-    background-color: transparent;
-    border-radius: 999px;
-    color: #dddddd;
+    background-color: #282828;
+    color: #A89985;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -44,23 +43,23 @@ button:hover {
     min-width: 15px;
     min-height: 15px;
     background-color: transparent;
-    color: #707A8C;
+    color: #A89984;
     border-radius: 999px;
 }
 
 #workspaces button:hover {
-    background-color: #FFCC66;    
-    color: #1f2430;
+    background-color: #FABD2F;
+    color: #282828;
 }
 
 #workspaces button.active {    
     font-weight: bold;
-    background-color: #FFCC66;  
-    color: #5F5F5F;
+    background-color: #FABD2F;  
+    color: #282828;
 }
 
 #workspaces button.urgent {    
-    background-color: #F26161;    
+    background-color: #FB4934;    
     color: #ffffff;
 }
 
@@ -82,16 +81,35 @@ button:hover {
 #custom-updates,
 #custom-bluetooth,
 #mpd {
-    color: #707A8C;
-    margin: 0px 2px;
-    padding: 0 15px;
-    border-radius: 999px;
-    background-color: #1f2430;
-    box-shadow: inset 0px 0px 0 2px #343946;
+    color: #A89985;
+    margin: 5px 0px;
+    padding: 0 8px;
+    background-color: #3C3836;
 }
-
-.modules-right > widget:last-child > #battery {
-    margin-right: 0px;
+/* Group end */
+#clock {
+    margin-right: 2px;
+    padding-right: 12px;
+    border-radius: 0 999px 999px 0;
+}
+/* Group start */
+#custom-bluetooth {
+    margin-left: 2px;
+    padding-left: 12px;
+    border-radius: 999px 0 0 999px;
+}
+/* Single item groups (buttons) */
+#custom-updates, 
+#tray,
+#battery {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 999px;
+}
+#clock {
+    margin-right: 4px;
 }
 
 #tray {        
@@ -100,34 +118,16 @@ button:hover {
 
 #window { 
     margin-left: 6px;
-    color: #707A8C;
+    color: #A89985;
 }
 
 #workspaces {       
-    margin: 0 4px;
     padding: 4px 4px;   
     border-radius: 999px;
-    background-color: #1f2430;
-    box-shadow: inset 0px 0px 0 2px #343946;    
-}
-
-#cpu {
-    border-radius: 999px 0px 0px 999px;
-    margin-right: 0px;       
-}
-
-#memory {
-    box-shadow: inset 0px 2px 0 0px #343946,
-                inset 0px -2px 0 0px #343946;
-    border-radius: 0px;
-    padding: 0 10px;
-    margin: 0px;
 }
 
 #clock {    
     box-shadow: none;
-    
-    color: #ffffff;
 }
 
 
@@ -138,8 +138,8 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged, #battery.full {   
-    color: #1f2430;
-    background-color: #FFCC66;
+    color: #282828;
+    background-color: #FABD2F;
     box-shadow: none;
 }
 
@@ -148,32 +148,20 @@ button:hover {
     animation: batteryCritical 1.2s linear 0s infinite normal forwards;        
 }
 
-#network {     
-
-}
-
 #network.disconnected,
 #pulseaudio.muted {
     transition: all 0.2s;
     color: #aaaaaa;    
 }
 
-.custom-spotify {
-    color: #d5ff80;
-    margin-right: 10px;
-}
+/* For the title/artist */
+#custom-waymedia{}
 
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#temperature {
-    margin-left: 0px;
-    border-radius: 0px 999px 999px 0px;
-}
+/* For the buttons */
+#custom-waymedia-buttons{}
 
 #temperature.critical {    
-    color: #F26161;
+    color: #FB4934;
 }
 
 #tray > .passive {
@@ -184,7 +172,7 @@ button:hover {
 }
 
 #tray > .needs-attention {
-    background-color: #F26161;    
+    background-color: #FB4934;    
     border-radius: 999px;
 }
 
@@ -212,24 +200,24 @@ button:hover {
 	background-color: transparent;
 }
 
-#custom-updates {    
-    color: #707A8C;
+#custom-updates:not(.pending) {    
+    color: #A89985;
     transition: all 0.5s;
+    padding: 0 10px;
 }
 
 #custom-updates.pending {
-    box-shadow: inset 0 0 0 2px #FFCC66;
-    color: #FFCC66;
+    box-shadow: inset 0 0 0 2px #FABD2F;
+    color: #FABD2F;
     font-weight: 900;
     transition: all 0.5s;
 }
 
 tooltip {
-    background-color: #1f2430;
+    background-color: #282828;
     border: 2px solid;
-    border-color: #343946;    
-    border-radius: 10px;
-    color: #909AAC;
+    border-color: #928374;    
+    color: #A89984;
 }
 tooltip label {
     padding: 5px;
@@ -239,15 +227,15 @@ tooltip label {
 
 @keyframes batteryCritical {
     0% {
-        background-color: #F26161;
+        background-color: #FB4934;
         color: #fcfcfc;
     }
     50% {
-        background-color: #1f2430;
-        color: #F26161;
+        background-color: #282828;
+        color: #FB4934;
     } 
     100% {
-        background-color: #F26161;
+        background-color: #FB4934;
         color: #fcfcfc;     
     }
 }

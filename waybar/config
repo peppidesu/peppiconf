@@ -1,21 +1,21 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 28,
+    "height": 32,
     "spacing": 0,
-    "margin-top": 8,
-    "margin-left": 10,
-    "margin-right": 10,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
     "modules-left": [
+        "custom/spacer",
         "hyprland/workspaces",
         "tray",
         "hyprland/window"
     ],
     "modules-center": [
-        "clock"
+        "custom/waymedia"
     ],
     "modules-right": [
-        "custom/spotify",
         "custom/updates",
         "custom/bluetooth",
         "network",
@@ -23,7 +23,9 @@
         "cpu",
         "memory",
         "temperature",
-        "battery"
+        "clock",
+        "battery",
+        "custom/spacer"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -71,31 +73,31 @@
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "<span><big>{:%Y %B}</big>\n\n{calendar}</span>",
+        "tooltip-format": "<span>{calendar}</span>",
         "interval": 1,
         "format": "{:%H:%M:%S}",
         "format-alt": "{:%Y-%m-%d %H:%M:%S}",
         "calendar": {
             "weeks-pos": "left",
             "format": {
-                "today": "<span color='#FF6666'><u>{}</u></span>",
-                "weeks": "<span color='#707A8C'>{}</span>"
+                "today": "<span color='#FABD2F'><u>{}</u></span>",
+                "weeks": "<span color='#FABD2F'>{}</span>"
             }
         }
     },
     "cpu": {
-        "format": "cpu: {usage}%",
+        "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "mem: {}%",
+        "format": "  {}%",
         "tooltip": false
     },
     "temperature": {
         "thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
+        "format": "{icon} {temperatureC}°C",
         "format-icons": [
             "",
             "",
@@ -144,14 +146,14 @@
         "bat": "BAT2"
     },
     "hyprland/window": {
-        "max-length": 36
+        "max-length": 48
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "󰖩",
-        "format-ethernet": "󰛳",
+        "format-ethernet": "󰲝",
         "tooltip-format": "ssid : {essid}\naddr : {ipaddr}/{cidr}\ngate : {gwaddr}\ndev  : {ifname}",
-        "format-linked": "󰛳",
+        "format-linked": "󰲝",
         "format-disconnected": "",
         "format-alt": "{ipaddr}/{cidr}"
     },
@@ -187,18 +189,8 @@
         "interval": 5
     },
     "custom/bluetooth": {
-        "format": "󰂯",
+        "format": "",
         "on-click": "blueberry"       
-    },
-    "custom/spotify": {
-        "format": "{icon} {}",
-        "escape": true,
-        "return-type": "json",
-        "max-length": 32,
-        "on-click": "spotify && hyprctl dispatch focuswindow Spotify",
-        "smooth-scrolling-threshold": 10,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null",
-        "exec-if": "pgrep spotify"
     },
     "hyprland/workspaces": {
         "format": "{name}",
@@ -212,5 +204,17 @@
         "exec": "$HOME/.config/waybar/check-updates.sh",
         "interval": 3600,
         "signal": 8
+    },
+    "custom/waymedia": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/scripts/waymedia/waymedia",
+        "interval": 1,
+        "limit": 60,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "pause-icon": "   ",
+        "play-icon": "   ",
+        "divider": " - "
     }
 }
