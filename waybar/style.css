@@ -108,7 +108,9 @@ button:hover {
     padding-right: 12px;
     border-radius: 999px;
 }
-#clock {
+
+.modules-right > widget:last-child > #clock,
+.modules-right > widget:last-child > #battery {
     margin-right: 4px;
 }
 
