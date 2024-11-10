@@ -1,0 +1,1 @@
+python3 $HOME/.config/waybar/scripts/waymedia/waymedia
