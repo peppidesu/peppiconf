@@ -1,3 +1,3 @@
 # Peppiconf
 
-personal repo for config files
+dotfiles
