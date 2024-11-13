@@ -1,66 +1,66 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Maple Mono NF";
-    font-size: 12px;
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "Maple Mono NF";
+  font-size: 12px;
 }
 
 window#waybar {
-    background-color: #282828;
-    color: #A89985;
-    transition-property: background-color;
-    transition-duration: .5s;
+  background-color: #282828;
+  color: #a89985;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 window#waybar.termite {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 window#waybar.chromium {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -1px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -1px transparent;
+  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
 }
 
 /* https://githbackground: #000000ub.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    background: inherit;
-    border-radius: 999px;
+  background: inherit;
+  border-radius: 999px;
 }
 
-#workspaces button {    
-    transition: all 0.2s;
-    padding: 4px 4px 4px 5px;
-    margin: 3px;
-    min-width: 15px;
-    min-height: 15px;
-    background-color: transparent;
-    color: #A89984;
-    border-radius: 999px;
+#workspaces button {
+  transition: all 0.2s;
+  padding: 4px 4px 4px 5px;
+  margin: 3px;
+  min-width: 15px;
+  min-height: 15px;
+  background-color: transparent;
+  color: #a89984;
+  border-radius: 999px;
 }
 
 #workspaces button:hover {
-    background-color: #FABD2F;
-    color: #282828;
+  background-color: #fabd2f;
+  color: #282828;
 }
 
-#workspaces button.active {    
-    font-weight: bold;
-    background-color: #FABD2F;  
-    color: #282828;
+#workspaces button.active {
+  font-weight: bold;
+  background-color: #fabd2f;
+  color: #282828;
 }
 
-#workspaces button.urgent {    
-    background-color: #FB4934;    
-    color: #ffffff;
+#workspaces button.urgent {
+  background-color: #fb4934;
+  color: #ffffff;
 }
 
 #clock,
@@ -81,101 +81,104 @@ button:hover {
 #custom-updates,
 #custom-bluetooth,
 #mpd {
-    color: #A89985;
-    margin: 5px 0px;
-    padding: 0 8px;
-    background-color: #3C3836;
+  color: #a89985;
+  margin: 5px 0px;
+  padding: 0 8px;
+  background-color: #3c3836;
 }
 /* Group end */
 #clock {
-    margin-right: 2px;
-    padding-right: 12px;
-    border-radius: 0 999px 999px 0;
+  margin-right: 2px;
+  padding-right: 12px;
+  border-radius: 0 999px 999px 0;
 }
 /* Group start */
 #custom-bluetooth {
-    margin-left: 2px;
-    padding-left: 12px;
-    border-radius: 999px 0 0 999px;
+  margin-left: 2px;
+  padding-left: 12px;
+  border-radius: 999px 0 0 999px;
 }
 /* Single item groups (buttons) */
-#custom-updates, 
+#custom-updates,
 #tray,
 #battery {
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius: 999px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 999px;
 }
 
 .modules-right > widget:last-child > #clock,
 .modules-right > widget:last-child > #battery {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
-#tray {        
-    padding: 4px 10px;
+#tray {
+  padding: 4px 10px;
 }
 
-#window { 
-    margin-left: 6px;
-    color: #A89985;
+#window {
+  margin-left: 6px;
+  color: #a89985;
 }
 
-#workspaces {       
-    padding: 4px 4px;   
-    border-radius: 999px;
+#workspaces {
+  padding: 4px 4px;
+  border-radius: 999px;
 }
 
-#clock {    
-    box-shadow: none;
+#clock {
+  box-shadow: none;
 }
 
-
-#battery {    
-    min-width: 40px;
-    border-radius: 999px;        
-    transition: all 0.3s;
+#battery {
+  min-width: 40px;
+  border-radius: 999px;
+  transition: all 0.3s;
 }
 
-#battery.charging, #battery.plugged, #battery.full {   
-    color: #282828;
-    background-color: #FABD2F;
-    box-shadow: none;
+#battery.charging,
+#battery.plugged,
+#battery.full {
+  color: #282828;
+  background-color: #fabd2f;
+  box-shadow: none;
 }
 
-#battery.critical:not(.charging) {    
-    background-color: transparent;
-    animation: batteryCritical 1.2s linear 0s infinite normal forwards;        
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  animation: batteryCritical 1.2s linear 0s infinite normal forwards;
 }
 
 #network.disconnected,
 #pulseaudio.muted {
-    transition: all 0.2s;
-    color: #aaaaaa;    
+  transition: all 0.2s;
+  color: #aaaaaa;
 }
 
 /* For the title/artist */
-#custom-waymedia{}
+#custom-waymedia {
+}
 
 /* For the buttons */
-#custom-waymedia-buttons{}
+#custom-waymedia-buttons {
+}
 
-#temperature.critical {    
-    color: #FB4934;
+#temperature.critical {
+  color: #fb4934;
 }
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
+  -gtk-icon-effect: dim;
 }
 #tray > * {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 #tray > .needs-attention {
-    background-color: #FB4934;    
-    border-radius: 999px;
+  background-color: #fb4934;
+  border-radius: 999px;
 }
 
 /* #idle_inhibitor {
@@ -188,56 +191,57 @@ button:hover {
 } */
 
 #keyboard-state > label {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 #keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 #scratchpad {
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 #scratchpad.empty {
-	background-color: transparent;
+  background-color: transparent;
 }
 
-#custom-updates:not(.pending) {    
-    color: #A89985;
-    transition: all 0.5s;
-    padding: 0 10px;
+#custom-updates:not(.has-updates) {
+  color: #a89985;
+  font-weight: bold;
+  transition: all 0.5s;
+  padding: 0 12px 0 10px;
 }
 
-#custom-updates.pending {
-    box-shadow: inset 0 0 0 2px #FABD2F;
-    color: #FABD2F;
-    font-weight: 900;
-    transition: all 0.5s;
+#custom-updates.has-updates {
+  box-shadow: inset 0 0 0 2px #fabd2f;
+  color: #fabd2f;
+  font-weight: 900;
+  transition: all 0.5s;
 }
 
 tooltip {
-    background-color: #282828;
-    border: 2px solid;
-    border-color: #928374;    
-    color: #A89984;
+  background-color: #282828;
+  border: 2px solid;
+  border-color: #928374;
+  color: #a89984;
 }
 tooltip label {
-    padding: 5px;
+  padding: 5px;
 }
 
 /* Keyframes ---------------------------------------------------------------- */
 
 @keyframes batteryCritical {
-    0% {
-        background-color: #FB4934;
-        color: #fcfcfc;
-    }
-    50% {
-        background-color: #282828;
-        color: #FB4934;
-    } 
-    100% {
-        background-color: #FB4934;
-        color: #fcfcfc;     
-    }
+  0% {
+    background-color: #fb4934;
+    color: #fcfcfc;
+  }
+  50% {
+    background-color: #282828;
+    color: #fb4934;
+  }
+  100% {
+    background-color: #fb4934;
+    color: #fcfcfc;
+  }
 }
