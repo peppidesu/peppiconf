@@ -20,3 +20,6 @@ export PAGER=less
 
 # used to forward ssh-agent socket
 export SSH_AUTH_SOCK=/run/user/1000/ssh-agent.socket
+
+export PATH=$PATH:$HOME/.cargo/bin
+export RUSTC_WRAPPER=sccache

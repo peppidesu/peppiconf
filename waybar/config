@@ -205,7 +205,7 @@
             "updated": ""
         },
         "exec-if": "which waybar-module-pacman-updates",
-        "on-click": "hyprctl dispatch exec -- '[float; dimaround; stayfocused] kitty -- paru -Syu'",
+        "on-click": "hyprctl dispatch exec -- '[float; dimaround; stayfocused; size 40% 50%] kitty -- paru -Syu'",
         "exec": "waybar-module-pacman-updates --no-zero-output --interval-seconds 5 --network-interval-seconds 300"
     },
     "custom/waymedia": {
