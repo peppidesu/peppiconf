@@ -22,7 +22,6 @@ plugins=(
   docker-compose
   archlinux
   systemd
-  pnpm
   node
 )
 

@@ -16,6 +16,7 @@
         "custom/waymedia"
     ],
     "modules-right": [
+        "hyprland/submap",
         "custom/updates",
         "custom/bluetooth",
         "network",
@@ -146,7 +147,13 @@
         "bat": "BAT2"
     },
     "hyprland/window": {
-        "max-length": 50
+        "max-length": 50,
+        "seperate-outputs": true,
+        "icon": true
+    },
+    "hyprland/submap": {
+        "format": "{}",
+        "tooltip": true
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -193,7 +200,7 @@
         "on-click": "blueberry"       
     },
     "hyprland/workspaces": {
-        "format": "{name}",
+        "format": "{id}",
         "on-click": "activate",
         "sort-by": "id"
     },
