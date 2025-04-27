@@ -11,7 +11,7 @@
   },
   {
     "label": "Suspend",
-    "exec": "systemctl -i suspend",
+    "exec": "systemctl -i suspend-then-hibernate",
     "icon": "/home/peppidesu/.config/nwg-bar/system-suspend.svg"
   },
   {
@@ -20,8 +20,9 @@
     "icon": "/home/peppidesu/.config/nwg-bar/system-reboot.svg"
   },
   {
-    "label": "Shutdown",
-    "exec": "systemctl -i poweroff",
+    "label": "Hibernate",
+    "exec": "systemctl -i hibernate",
     "icon": "/home/peppidesu/.config/nwg-bar/system-shutdown.svg"
   }
 ]
+

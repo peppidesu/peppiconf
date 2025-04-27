@@ -22,8 +22,13 @@ if command -v bat >/dev/null; then
   alias cat="bat --theme gruvbox-dark"
 fi
 
+# zed
+if command -v zeditor >/dev/null; then
+  alias zed="zeditor"
+fi
+
 # lsd
-if command -v ls >/dev/null; then
+if command -v lsd >/dev/null; then
   alias ls="lsd"
   alias l="lsd -la"
 fi
