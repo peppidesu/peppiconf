@@ -5,13 +5,20 @@
 **/
 * {
   font-family: "Maple Mono NF" !important;
-  --accent-1: #d79921 !important; /* links */
-  --accent-2: #fabd2f !important; /* general unread/mention elements */
-  --accent-3: #d79921 !important; /* accent buttons */
-  --accent-4: #fabd2f !important; /* accent buttons when hovered */
-  --accent-5: #fabd2f !important;
-  --mention: #fabd2f10 !important;
-  --mention-hover: #fabd2f08 !important;
+  --accent-1: #458588 !important; /* links */
+  --accent-2: #8EC07C !important; /* general unread/mention elements */
+  --accent-3: #689D6A !important; /* accent buttons */
+  --accent-4: #8EC07C !important; /* accent buttons when hovered */
+  --accent-5: #8EC07C !important;
+
+  --green-1: #8EC07C !important;
+  --green-2: #8EC07C !important;
+  --green-3: #8EC07C !important;
+  --green-4: #8EC07C !important;
+  --green-5: #8EC07C !important;
+
+  --mention: #8EC07C10 !important;
+  --mention-hover: #8EC07C20 !important;
   --red-400: var(--accent-2) !important;
 }
 

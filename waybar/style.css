@@ -48,13 +48,13 @@ button:hover {
 }
 
 #workspaces button:hover {
-  background-color: #fabd2f;
+  background-color: #8ec07c;
   color: #282828;
 }
 
 #workspaces button.active {
   font-weight: bold;
-  background-color: #fabd2f;
+  background-color: #8ec07c;
   color: #282828;
 }
 
@@ -142,7 +142,7 @@ button:hover {
 #battery.plugged,
 #battery.full {
   color: #282828;
-  background-color: #fabd2f;
+  background-color: #8ec07c;
   box-shadow: none;
 }
 
@@ -213,8 +213,8 @@ button:hover {
 }
 
 #custom-updates.has-updates {
-  box-shadow: inset 0 0 0 2px #fabd2f;
-  color: #fabd2f;
+  box-shadow: inset 0 0 0 2px #8ec07c;
+  color: #8ec07c;
   font-weight: 900;
   transition: all 0.5s;
 }

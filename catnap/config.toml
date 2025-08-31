@@ -8,18 +8,18 @@
 ##          FetchInfo stats Config          ##
 ##############################################
 [stats]
-username = { icon = " ", name = "user", color = "{YW}" }
-hostname = { icon = " ", name = "host", color = "{YW}" }
-distro = { icon = " ", name = "dist", color = "{YW}" }
+username = { icon = " ", name = "user", color = "{CN}" }
+hostname = { icon = " ", name = "host", color = "{CN}" }
+distro = { icon = " ", name = "dist", color = "{CN}" }
 sep_1 = ""
-desktop = { icon = " ", name = "de", color = "{YW}" }
-terminal = { icon = " ", name = "term", color = "(YW)" }
-shell = { icon = " ", name = "sh", color = "{YW}" }
+desktop = { icon = " ", name = "de", color = "{CN}" }
+terminal = { icon = " ", name = "term", color = "(CN)" }
+shell = { icon = " ", name = "sh", color = "{CN}" }
 sep_2 = ""
-cpu       = {icon = " ", name = "cpu", color = "(YW)"}
-gpu       = {icon = "󱔐 ", name = "gpu", color = "(YW)"}
+cpu       = {icon = " ", name = "cpu", color = "(CN)"}
+gpu       = {icon = "󱔐 ", name = "gpu", color = "(CN)"}
 # battery   = {icon = " ", name = "battery", color = "(RD)"}
-memory    = {icon = " ", name = "mem", color = "{YW}"}
+memory    = {icon = " ", name = "mem", color = "{CN}"}
 # The following stats do not work on MacOS and the BSDs.
 # disk_0    = {icon = " ", name = "disk", color = "(WE)"}
 sep_color = "SEPARATOR"
@@ -36,7 +36,7 @@ location = ""        # Used for fetching weather; leave empty to use the locatio
 
 [misc.figletLogos] # Requires Figlet.
 enable = false
-color = "(YW)"
+color = "(CN)"
 font = "slant"
 margin = [0, 0, 0,]
 

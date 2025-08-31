@@ -32,3 +32,5 @@ if command -v lsd >/dev/null; then
   alias ls="lsd"
   alias l="lsd -la"
 fi
+
+alias testparrot="curl parrot.live"
