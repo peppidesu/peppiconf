@@ -77,7 +77,7 @@
             "enabled": true
         },
         "BetterGifPicker": {
-            "enabled": true
+            "enabled": false
         },
         "BetterNotesBox": {
             "enabled": false
@@ -250,11 +250,11 @@
             "savedPasswords": "password, Password"
         },
         "IrcColors": {
-            "enabled": true,
-            "memberListColors": true,
+            "enabled": false,
+            "memberListColors": false,
             "lightness": 70,
             "applyColorOnlyInDms": false,
-            "applyColorOnlyToUsersWithoutColor": true
+            "applyColorOnlyToUsersWithoutColor": false
         },
         "KeepCurrentChannel": {
             "enabled": false
@@ -319,7 +319,7 @@
         "NoBlockedMessages": {
             "enabled": true,
             "ignoreMessages": false,
-            "applyToIgnoredUsers": true
+            "applyToIgnoredUsers": false
         },
         "NoDevtoolsWarning": {
             "enabled": false
@@ -643,6 +643,9 @@
         },
         "ExpressionCloner": {
             "enabled": false
+        },
+        "CopyStickerLinks": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -655,6 +658,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1754050576458
+        "settingsSyncVersion": 1755034258532
     }
 }
