@@ -1,4 +1,4 @@
-// Vencord 8807564
+// Vencord fbc2dbe
 // Standalone: true
 // Platform: Universal
 // Updater Disabled: false

@@ -8,18 +8,18 @@
 ##          FetchInfo stats Config          ##
 ##############################################
 [stats]
-username = { icon = " ", name = "user", color = "{CN}" }
-hostname = { icon = " ", name = "host", color = "{CN}" }
-distro = { icon = " ", name = "dist", color = "{CN}" }
+username = { icon = " ", name = "user", color = "(CN)" }
+hostname = { icon = " ", name = "host", color = "(CN)" }
+distro = { icon = " ", name = "dist", color = "(CN)" }
 sep_1 = ""
-desktop = { icon = " ", name = "de", color = "{CN}" }
-terminal = { icon = " ", name = "term", color = "(CN)" }
-shell = { icon = " ", name = "sh", color = "{CN}" }
+desktop = { icon = " ", name = "de", color = "(MA)" }
+terminal = { icon = " ", name = "term", color = "(MA)" }
+shell = { icon = " ", name = "sh", color = "(MA)" }
 sep_2 = ""
-cpu       = {icon = " ", name = "cpu", color = "(CN)"}
-gpu       = {icon = "󱔐 ", name = "gpu", color = "(CN)"}
+cpu = { icon = " ", name = "cpu", color = "(GN)" }
+gpu = { icon = "󱔐 ", name = "gpu", color = "(GN)" }
 # battery   = {icon = " ", name = "battery", color = "(RD)"}
-memory    = {icon = " ", name = "mem", color = "{CN}"}
+memory = { icon = " ", name = "mem", color = "(GN)" }
 # The following stats do not work on MacOS and the BSDs.
 # disk_0    = {icon = " ", name = "disk", color = "(WE)"}
 sep_color = "SEPARATOR"

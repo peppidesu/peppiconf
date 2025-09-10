@@ -32,7 +32,7 @@
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
-    os_icon                 # os identifier
+    #os_icon                 # os identifier
     dir                     # current directory
     vcs                     # git status
     # =========================[ Line #2 ]=========================
@@ -118,7 +118,7 @@
   typeset -g POWERLEVEL9K_MODE=nerdfont-complete
   # When set to `moderate`, some icons will have an extra space after them. This is meant to avoid
   # icon overlap when using non-monospace fonts. When set to `none`, spaces are not added.
-  typeset -g POWERLEVEL9K_ICON_PADDING=none
+  typeset -g POWERLEVEL9K_ICON_PADDING=moderate
 
   # Basic style options that define the overall look of your prompt. You probably don't want to
   # change them.
@@ -186,9 +186,9 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=1
   # Custom icon.
-  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
 
   ################################[ prompt_char: prompt symbol ]################################
   # Green prompt symbol if the last command succeeded.
@@ -196,13 +196,13 @@
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=1
   # Default prompt symbol.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION=''
   # Prompt symbol in command vi mode.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION='❮'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VICMD_CONTENT_EXPANSION=''
   # Prompt symbol in visual vi mode.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIVIS_CONTENT_EXPANSION='V'
   # Prompt symbol in overwrite vi mode.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIOWR_CONTENT_EXPANSION='▶'
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIOWR_CONTENT_EXPANSION=''
   typeset -g POWERLEVEL9K_PROMPT_CHAR_OVERWRITE_STATE=true
   # No line terminator if prompt_char is the last segment.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=''
@@ -211,19 +211,19 @@
 
   ##################################[ dir: current directory ]##################################
   # Default current directory color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=4
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=1
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=4
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=1
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=4
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=1
   # Set to true to display anchor directory segments in bold.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=false
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
   local anchor_files=(
     .bzr
@@ -345,7 +345,7 @@
   # typeset -g POWERLEVEL9K_DIR_CLASSES=()
 
   # Custom prefix.
-  # typeset -g POWERLEVEL9K_DIR_PREFIX='%fin '
+  # typeset -g POWERLEVEL9K_DIR_PREFIX=' '
 
   #####################################[ vcs: git status ]######################################
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
@@ -851,7 +851,7 @@
   # Zero values are represented as empty parameters.
   #
   # The default format:
-  #
+  # 
   #   '${P9K_TASKWARRIOR_OVERDUE_COUNT:+"!$P9K_TASKWARRIOR_OVERDUE_COUNT/"}$P9K_TASKWARRIOR_PENDING_COUNT'
   #
   # typeset -g POWERLEVEL9K_TASKWARRIOR_CONTENT_EXPANSION='$P9K_TASKWARRIOR_PENDING_COUNT'
@@ -872,11 +872,11 @@
 
   ##################################[ context: user@hostname ]##################################
   # Context color when running with privileges.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=1
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=9
   # Context color in SSH without privileges.
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=5
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=6
   # Default context color (no privileges, no SSH).
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=3
+  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=2
 
   # Context format when running with privileges: bold user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%B%n@%m'
@@ -1194,7 +1194,7 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_HASKELL_STACK_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  #############[ kubecontext: current kubernetes context (https://kubernetes.io/) ]#############
+  #############[ moderatecontext: current kubernetes context (https://kubernetes.io/) ]#############
   # Show kubecontext only when the command you are typing invokes one of these tools.
   # Tip: Remove the next line to always show kubecontext.
   typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile|flux|fluxctl|stern|kubeseal|skaffold|kubent|kubecolor'

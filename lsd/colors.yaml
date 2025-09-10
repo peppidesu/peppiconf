@@ -1,22 +1,22 @@
-user: dark_cyan
-group: dark_magenta
+user: grey
+group: dark_grey
 permission:
-  read: red
-  write: blue
-  exec: yellow
+  read: dark_red
+  write: dark_green
+  exec: dark_cyan
   exec-sticky: 7
   no-access: 245
   octal: 6
   acl: dark_red
   context: green
 date:
-  hour-old: green
-  day-old: cyan
+  hour-old: blue
+  day-old: dark_blue
   older: dark_grey
 size:
   none: 245
-  small: cyan
-  medium: dark_yellow
+  small: green
+  medium: yellow
   large: red
 inode:
   valid: 13
@@ -25,4 +25,3 @@ links:
   valid: magenta
   invalid: dark_red
 tree-edge: dark_grey
-

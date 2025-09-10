@@ -1,0 +1,20 @@
+use_nerdfont = true
+
+[theme]
+background = ""
+primary = "light white"
+secondary = "light black"
+title = "green"
+playing = "green"
+playing_selected = "light green"
+playing_bg = "black"
+highlight = "light cyan"
+highlight_bg = "light black"
+error = "light white"
+error_bg = "red"
+statusbar = "light green"
+statusbar_progress = "red"
+statusbar_bg = "black"
+cmdline = "light white"
+cmdline_bg = "black"
+search_match = "light red"

@@ -1,6 +1,5 @@
 alias zshconfig="nvim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-
 # ssh kitten
 if command -v kitten >/dev/null; then
   alias ssh="kitten ssh"

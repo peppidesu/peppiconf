@@ -3,7 +3,7 @@
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [
-        "https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/themes/flavors/midnight-vencord.theme.css"
+        "https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/themes/midnight.theme.css"
     ],
     "eagerPatches": false,
     "enabledThemes": [
@@ -111,7 +111,7 @@
             "blurAmount": 20
         },
         "CallTimer": {
-            "enabled": true,
+            "enabled": false,
             "format": "stopwatch"
         },
         "ClearURLs": {
@@ -646,6 +646,9 @@
         },
         "CopyStickerLinks": {
             "enabled": false
+        },
+        "ImageFilename": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -658,6 +661,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1755034258532
+        "settingsSyncVersion": 1756740571829
     }
 }

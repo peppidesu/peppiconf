@@ -4,25 +4,37 @@
  * @description adds custom accent colors and font
 **/
 * {
-  font-family: "Maple Mono NF" !important;
-  --accent-1: #458588 !important; /* links */
-  --accent-2: #8EC07C !important; /* general unread/mention elements */
-  --accent-3: #689D6A !important; /* accent buttons */
-  --accent-4: #8EC07C !important; /* accent buttons when hovered */
-  --accent-5: #8EC07C !important;
+    font-family: "Maple Mono NF" !important;
+    --accent-1: #53d1e7 !important; /* links */
+    --accent-2: #ee6183 !important; /* general unread/mention elements */
+    --accent-3: #53d1e7 !important; /* accent buttons */
+    --accent-4: #53d1e7 !important; /* accent buttons when hovered */
+    --accent-5: #53d1e7 !important;
 
-  --green-1: #8EC07C !important;
-  --green-2: #8EC07C !important;
-  --green-3: #8EC07C !important;
-  --green-4: #8EC07C !important;
-  --green-5: #8EC07C !important;
+    --green-1: #1bd07d !important;
+    --green-2: #1bd07d !important;
+    --green-3: #1bd07d !important;
+    --green-4: #1bd07d !important;
+    --green-5: #1bd07d !important;
 
-  --mention: #8EC07C10 !important;
-  --mention-hover: #8EC07C20 !important;
-  --red-400: var(--accent-2) !important;
+    --mention: #ee618320 !important;
+    --mention-hover: #ee618330 !important;
+
+    --bg-1: #283744 !important;
+    --bg-2: #1f2b36 !important;
+    --bg-3: #1f2b36 !important;
+    --bg-4: #171f28 !important;
+    --hover: #1f2b36 !important;
+    --active: #1f2b36 !important;
+
+    --mention-background: color-mix(in hsl, var(--accent-1), transparent 90%);
 }
 
 .selectorButton_c6d3dc.selectorButtonSelected_c6d3dc .selectorText_c6d3dc,
 .selectorButton_c6d3dc:hover .selectorText_c6d3dc {
-  color: var(--bg-2);
+    color: var(--bg-2);
+}
+
+.interactive:hover {
+    background-color: #53d1e7 !important;
 }
