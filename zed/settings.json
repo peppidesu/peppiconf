@@ -9,27 +9,40 @@
 {
   "show_whitespaces": "selection",
   "buffer_line_height": "comfortable",
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+    },
+  },
   "ssh_connections": [
     {
-      "host": "10.69.69.1",
+      "host": "lagoon",
+      "args": [],
       "projects": [
         {
-          "paths": ["/home/peppidesu"]
+          "paths": ["/home/peppidesu"],
         },
         {
-          "paths": ["/home/peppidesu/dev/sv-mcrl2"]
-        }
-      ]
-    }
+          "paths": ["/home/peppidesu/dev/sandphrog-website"],
+        },
+        {
+          "paths": ["/home/peppidesu/dev/sv-mcrl2/./"],
+        },
+      ],
+    },
   ],
   "languages": {
     "Rust": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
     },
     "Python": {
       "show_edit_predictions": true,
-      "language_servers": ["ruff", "pyright"]
-    }
+      "language_servers": ["ruff", "pyright"],
+    },
+    "JavaScript": {
+      "formatter": "prettier",
+    },
   },
   "show_edit_predictions": false,
   "vim_mode": false,
@@ -38,36 +51,36 @@
   "buffer_font_size": 16,
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000
-    }
+      "milliseconds": 1000,
+    },
   },
-  "buffer_font_family": "Maple Mono NF",
-  "ui_font_family": "Maple Mono NF",
+  "buffer_font_family": "Maple Mono NF CN",
+  "ui_font_family": "Maple Mono NF CN",
   "terminal": {
-    "font_family": "Maple Mono NF"
+    "font_family": "Maple Mono NF CN",
   },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "git": {
     "git_gutter": "tracked_files",
     "gutter_debounce": 0,
     "inline_blame": {
       "enabled": true,
-      "show_commit_summary": true
-    }
+      "show_commit_summary": true,
+    },
   },
   "lsp": {
-    "ruff": {
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name",
+      },
+    },
+    "cargo-tom": {
       "initialization_options": {
-        "settings": {
-          // Ruff server settings goes here
-          "lineLength": 80,
-          "lint": {
-            "extendSelect": ["I"]
-          }
-        }
-      }
-    }
-  }
+        "hide_docs_info_message": true,
+      },
+    },
+  },
 }

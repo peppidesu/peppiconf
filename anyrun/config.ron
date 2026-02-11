@@ -4,10 +4,10 @@ Config(
   // Fraction(n): A fraction of the width or height of the full screen (depends on exclusive zones and the settings related to them) window respectively
   
   // The horizontal position, adjusted so that Relative(0.5) always centers the runner
-  x: Fraction(0.5),
+  x: Absolute(410),
 
   // The vertical position, works the same as `x`
-  y: Absolute(40),
+  y: Absolute(10),
 
   // The width of the runner
   width: Absolute(800), 
@@ -16,7 +16,7 @@ Config(
   height: Absolute(1),
   
   // Hide match and plugin info icons  
-  hide_icons: true, 
+  hide_icons: false, 
 
   // ignore exclusive zones, f.e. Waybar  
   ignore_exclusive_zones: false, 
@@ -25,17 +25,16 @@ Config(
   layer: Overlay, 
   
   // Hide the plugin info panel
-  hide_plugin_info: false, 
+  hide_plugin_info: true, 
 
   // Close window when a click outside the main box is received
-  close_on_click: false,
+  close_on_click: true,
 
   // Show search results immediately when Anyrun starts
   show_results_immediately: false,
 
   // Limit amount of entries shown in total
-  max_entries: None,
-  
+  max_entries: Some(10),
   // List of plugins to be loaded by default, can be specified with a relative path to be loaded from the
   // `<anyrun config dir>/plugins` directory or with an absolute path to just load the file the path points to.
   plugins: [
