@@ -53,7 +53,7 @@
             "enabled": false
         },
         "AlwaysAnimate": {
-            "enabled": false
+            "enabled": true
         },
         "AlwaysExpandRoles": {
             "enabled": false
@@ -661,6 +661,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1756740571829
+        "settingsSyncVersion": 1758114516884
     }
 }
