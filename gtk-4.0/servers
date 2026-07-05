@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="sftp://lagoon.home.arpa/" added="2026-04-19T09:36:43.766440Z" modified="2026-04-19T09:36:43.766442Z" visited="2026-04-19T09:36:43.766441Z">
+    <title>/ on lagoon.home.arpa</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2026-04-19T09:36:43.766441Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="ftp://10.129.73.72/" added="2026-05-19T19:45:13.161482Z" modified="2026-05-19T19:45:13.161484Z" visited="2026-05-19T19:45:13.161482Z">
+    <title>/ on 10.129.73.72</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2026-05-19T19:45:13.161483Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.101/" added="2026-06-05T13:10:00.409574Z" modified="2026-06-05T13:10:00.409577Z" visited="2026-06-05T13:10:00.409575Z">
+    <title>Windows shares on 192.168.1.101</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2026-06-05T13:10:00.409576Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

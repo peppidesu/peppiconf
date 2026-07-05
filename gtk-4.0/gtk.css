@@ -1,0 +1,4 @@
+@import url("/home/peppidesu/.themes/Everforest-Red-Light-Compact-Medium/gtk-4.0/gtk.css");
+@media (prefers-color-scheme: dark) {
+  @import url("/home/peppidesu/.themes/Everforest-Red-Dark-Compact-Medium/gtk-4.0/gtk.css");
+}
