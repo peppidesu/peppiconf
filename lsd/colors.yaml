@@ -1,5 +1,5 @@
-user: grey
-group: dark_grey
+user: red
+group: grey
 permission:
   read: dark_red
   write: dark_green

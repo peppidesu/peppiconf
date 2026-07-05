@@ -7,6 +7,79 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "icon_theme": "Zed (Default)",
+  "context_servers": {
+    "atlassian-mcp-server": {
+      "enabled": true,
+      "remote": false,
+      "settings": {},
+    },
+    "chrome-devtools-mcp-zed": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "browser_url": null,
+        "ws_endpoint": null,
+        "ws_headers": null,
+        "auto_connect": null,
+        "channel": null,
+        "headless": null,
+        "isolated": null,
+        "user_data_dir": null,
+        "viewport": null,
+        "executable_path": "/bin/thorium-browser",
+        "chrome_arg": [],
+        "proxy_server": null,
+        "accept_insecure_certs": null,
+        "category_emulation": null,
+        "category_performance": null,
+        "category_network": null,
+        "log_file": null,
+        "extra_args": [],
+      },
+    },
+  },
+  "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "reasoning_effort": "medium",
+        "model": "gpt-5.5"
+      },
+      "type": "registry",
+    },
+  },
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "default_profile": "write",
+    "default_model": {
+      "provider": "ollama",
+      "model": "gemma4:26b",
+      "enable_thinking": true,
+    },
+  },
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434",
+      "auto_discover": true,
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
   "show_whitespaces": "selection",
   "buffer_line_height": "comfortable",
   "diagnostics": {
@@ -33,6 +106,14 @@
     },
   ],
   "languages": {
+    "CSharp": {
+      "hard_tabs": false,
+      "tab_size": 4,
+      "language_servers": ["roslyn"],
+      // "formatter": "language_server",
+
+      "ensure_final_newline_on_save": false,
+    },
     "Rust": {
       "show_edit_predictions": false,
     },
@@ -46,9 +127,13 @@
   },
   "show_edit_predictions": false,
   "vim_mode": false,
-  "theme": "Neverending Night",
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "Everforest Light Hard (material)",
+    "dark": "Everforest Dark Hard (material)"
+  },
+  "ui_font_size": 16.0,
+  "buffer_font_size": 16.0,
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
@@ -59,9 +144,6 @@
   "terminal": {
     "font_family": "Maple Mono NF CN",
   },
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "git": {
     "git_gutter": "tracked_files",
     "gutter_debounce": 0,
@@ -71,15 +153,9 @@
     },
   },
   "lsp": {
-    "tinymist": {
-      "settings": {
-        "exportPdf": "onSave",
-        "outputPath": "$root/$name",
-      },
-    },
-    "cargo-tom": {
-      "initialization_options": {
-        "hide_docs_info_message": true,
+    "roslyn": {
+      "binary": {
+        "arguments": ["--stdio", "--autoLoadProjects"],
       },
     },
   },

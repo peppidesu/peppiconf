@@ -6,9 +6,3 @@ font_family             family="Maple Mono NF" features="calt cv01 ss01"
 window_padding_width    5
 
 clipboard_control       write-clipboard read-clipboard write-primary read-primary
-
-
-# BEGIN_KITTY_THEME
-# Everforest Light Medium
-include current-theme.conf
-# END_KITTY_THEME

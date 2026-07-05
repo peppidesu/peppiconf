@@ -27,8 +27,10 @@ export LESS_TERMCAP_so="${esc}[45;92m"       # start standout mode
 export LESS_TERMCAP_ue="${esc}[0m"           # end underline
 export LESS_TERMCAP_us="${esc}[4;36m"        # start underlining
 
-# used to forward ssh-agent socket
-export SSH_AUTH_SOCK=/run/user/1000/ssh-agent.socket
-
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH="$PATH:/home/peppidesu/.dotnet/tools"
 export RUSTC_WRAPPER=sccache
+
+if [ -f "/usr/share/nvm/init-nvm.sh" ]; then
+  . /usr/share/nvm/init-nvm.sh
+fi

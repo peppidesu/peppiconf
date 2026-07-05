@@ -1,28 +1,18 @@
 return {
   {
-    "nvim-mini/mini.base16",
-    version = "*",
-    config = function()
-      require("mini.base16").setup({
-        palette = {
-          base00 = "#171f28",
-          base01 = "#1f2b36",
-          base02 = "#283744",
-          base03 = "#304452",
-          base04 = "#415c6e",
-          base05 = "#9bb0b5",
-          base06 = "#b1c3c4",
-          base07 = "#c7d5d2",
-          base08 = "#ee6183",
-          base09 = "#f08f4f",
-          base0A = "#f9ef50",
-          base0B = "#72ff78",
-          base0C = "#7fe2e9",
-          base0D = "#4faccd",
-          base0E = "#f877dc",
-          base0F = "#1bd07d",
-        },
-      })
+    "sainnhe/everforest",
+    opts = function()
+      vim.g.everforest_background = "hard"
     end,
+  },
+  {
+    "4e554c4c/darkman.nvim",
+    event = "VimEnter",
+    build = "go build -o bin/darkman.nvim",
+    opts = {
+      change_background = true,
+      send_user_event = false,
+      colorscheme = { dark = "everforest", light = "everforest" },
+    },
   },
 }

@@ -1,0 +1,82 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "show_whitespaces": "selection",
+  "buffer_line_height": "comfortable",
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "ssh_connections": [
+    {
+      "host": "lagoon",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/peppidesu"],
+        },
+        {
+          "paths": ["/home/peppidesu/dev/sandphrog-website"],
+        },
+        {
+          "paths": ["/home/peppidesu/dev/sv-mcrl2/./"],
+        },
+      ],
+    },
+  ],
+  "languages": {
+    "Rust": {
+      "show_edit_predictions": false,
+    },
+    "Python": {
+      "show_edit_predictions": true,
+      "language_servers": ["ruff", "pyright"],
+    },
+    "JavaScript": {
+      "formatter": "prettier",
+    },
+  },
+  "show_edit_predictions": false,
+  "vim_mode": false,
+  "theme": "Neverending Night",
+  "ui_font_size": 16,
+  "buffer_font_size": 16.0,
+  "autosave": "off",
+  "buffer_font_family": "Maple Mono NF CN",
+  "ui_font_family": "Maple Mono NF CN",
+  "terminal": {
+    "font_family": "Maple Mono NF CN",
+  },
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "gutter_debounce": 0,
+    "inline_blame": {
+      "enabled": true,
+      "show_commit_summary": true,
+    },
+  },
+  "lsp": {
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name",
+      },
+    },
+    "cargo-tom": {
+      "initialization_options": {
+        "hide_docs_info_message": true,
+      },
+    },
+  },
+}
