@@ -1,70 +1,47 @@
-;   /\_/\   catnap config
-;  ( o.o )  your catnap configuration file
-;   > ^ <
+# This is the configuration file for catnap.
+# Here you can configure the stat colors,
+# stat names, stat icons and more!
+#
+# https://github.com/iinsertNameHere/catnap
 
-import "distros.cat"
+##############################################
+##          FetchInfo stats Config          ##
+##############################################
+[stats]
+username = { icon = " ", name = "user", color = "(CN)" }
+hostname = { icon = " ", name = "host", color = "(CN)" }
+distro = { icon = " ", name = "dist", color = "(CN)" }
+sep_1 = ""
+desktop = { icon = " ", name = "de", color = "(MA)" }
+terminal = { icon = " ", name = "term", color = "(MA)" }
+shell = { icon = " ", name = "sh", color = "(MA)" }
+sep_2 = ""
+cpu = { icon = " ", name = "cpu", color = "(GN)" }
+gpu = { icon = "󱔐 ", name = "gpu", color = "(GN)" }
+# battery   = {icon = " ", name = "battery", color = "(RD)"}
+memory = { icon = " ", name = "mem", color = "(GN)" }
+# The following stats do not work on MacOS and the BSDs.
+# disk_0    = {icon = " ", name = "disk", color = "(WE)"}
+sep_color = "SEPARATOR"
+colors = { icon = " ", name = "colors", color = "!DT!", symbol = "" }
 
-; -- Appearance ---------------------------------------------------------------
-; layout:       inline | art_on_top | stats_on_top
-; border_style: single | dashed | dotted | double | none
+##############################################
+##               Misc Config                ##
+##############################################
+[misc]
+borderstyle = "line"
+layout = "Inline"    # [Inline, ArtOnTop, StatsOnTop]
+stats_margin_top = 0
+location = ""        # Used for fetching weather; leave empty to use the location of your IP; check https://wttr.in/:help for supported location types
 
-$layout       = "inline"
-$border_style = "single"
-$border_color = $white
+[misc.figletLogos] # Requires Figlet.
+enable = false
+color = "(CN)"
+font = "slant"
+margin = [0, 0, 0,]
 
-; Overwrite the distroid. Empty => Use autodetect
-$distroid     = ""
-
-; -- Stats position -----------------------------------------------------------
-; Blank lines above the stat block. Useful with art_on_top or stats_on_top
-
-$stats_margin_top = 0
-
-; -- Graphs -------------------------------------------------------------------
-; Default bar width for graph stats (override per stat with graph_width=N)
-
-$graph_width = 15
-
-; -- Weather ------------------------------------------------------------------
-; City name for the weather stat. Leave empty to disable
-
-$location = ""
-
-; -- Stat list ----------------------------------------------------------------
-; Use enabled=false on any stat to hide it without removing it.
-; Stats marked "slow" may add latency on first run.
-; graph_style: blocks | ascii | dots | thin | pacman | precise (default)
-
-$stats = [
-
-    ; -- identity --------------------------------------------------------------
-    @{id="username"  icon=''  name="user"      color=$green}
-    @{id="hostname"  icon=''  name="hostname"  color=$cyan}
-    @{id="uptime"    icon=''  name="uptime"    color=$blue}
-    @{id="separator"}
-
-    ; -- system ----------------------------------------------------------------
-    @{id="distro"    icon=''  name="distro"    color=$yellow}
-    @{id="kernel"    icon=''  name="kernel"    color=$magenta}
-    @{id="packages"  icon=''  name="packages"  color=$red}  ; slow on large installs
-    @{id="separator"}
-
-    ; -- environment -----------------------------------------------------------
-    @{id="desktop"   icon=''  name="desktop"   color=$green}
-    @{id="terminal"  icon=''  name="term"      color=$yellow}
-    @{id="shell"     icon='󰞷'  name="shell"     color=$green}
-    @{id="separator"}
-
-    ; -- hardware --------------------------------------------------------------
-    @{id="gpu"       icon='󰋩'  name="gpu"       color=$red}  ; slow on some systems
-    @{id="cpu"       icon=''   name="cpu"       color=$magenta}
-    @{id="cpu_usage" icon=''  name="cpu load"  color=$yellow graph=true graph_color_fg=$bright_yellow}
-    @{id="memory"    icon=''   name="memory"    color=$blue  graph=true graph_color_fg=$bright_blue}
-    @{id="disk_0"    icon=''   name="disk"      color=$cyan  graph=true graph_style="ascii" graph_color_fg=$bright_cyan graph_color_bg=$yellow}
-    @{id="battery"   icon=''   name="battery"   color=$green  graph=true graph_style="thin"   graph_color_fg=$cyan graph_color_bg=$bright_black}
-    @{id="separator"}
-
-    ; -- extras ----------------------------------------------------------------
-    @{id="weather"   icon=''  name="weather"   color=$reset enabled=false}   ; slow, needs curl and an emoji font
-    @{id="colors"    icon=''  name="colors"    color=$reset   symbol='●'}
-]
+[misc.imageMode] # Requires Viu.
+enable = false
+path = "/path/to/some/image.png" # Please only use absolute paths.
+scale = 18
+margin = [2, 2, 3,]

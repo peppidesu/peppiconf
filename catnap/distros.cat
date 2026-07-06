@@ -1,920 +1,861 @@
-;   /\_/\   catnap distros
-;  ( -.- )  distro ASCII art and margin settings
-;   > z <   imported automatically by config.cat
-
-$distros = [
-
-    ; ### A ###
-
-    %{  id="alpine"
-        art=[
-            "{$blue}    /\\ /\\    "
-            "{$blue}   // \\  \\   "
-            "{$blue}  //   \\  \\  "
-            "{$blue} ///    \\  \\ "
-            "{$blue}///      \\  \\"
-        ]
-        margin=[3 2 2]
-    }
-
-    %{  id="amogos"
-        art=[
-            "{$red}      -///:.   "
-            "{$red}     smhhhhmh`"
-            "{$red}    :NA{$blue}mogO{$red}SNs "
-            "{$red}    hNNmmmmNNN "
-            "{$red}    NNNNNNNNNN "
-            "{$red}   :NNNNNNNNNN "
-            "{$red}   mNNssussNNN "
-            "{$red}  sNn:    sNNo "
-            "{$red}+ooo+     sNNo "
-            "{$red}        +oooo`"
-        ]
-        margin=[1 2 3]
-    }
-
-    %{  id="android"
-        art=[
-            "{$green}  ;,           ,;  "
-            "{$green}   ';,.-----.,;'   "
-            "{$green}  ,'           ',  "
-            "{$green} /    O     O    \\ "
-            "{$green}|                 |"
-            "{$green}'-----------------'"
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="arch"
-        art=[
-            "{$blue}      /\\      "
-            "{$blue}     /  \\     "
-            "{$blue}    /\\   \\    "
-            "{$blue}   /      \\   "
-            "{$blue}  /   ,,   \\  "
-            "{$blue} /   |  |  -\\ "
-            "{$blue}/_-''    ''-_\\"
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id="arch_old"
-        art=[
-            "{$blue}     -+*##*+-        "
-            "{$blue}   -+#######*={$black}:      "
-            "{$blue}  -+*******+++={$black}+*+   "
-            "{$blue} -++++++++=====- {$black}**+-"
-            "{$blue} =++==+     =====-{$black}-=="
-            "{$blue}+++++         +++-{$black}---"
-            "{$blue}++++        {$black}+++{$blue}+++{$black}=  "
-            "{$blue}****   {$black}******+  {$blue}**   "
-            "{$blue}***              *   "
-        ]
-        margin=[1 2 3]
-    }
-
-    %{  id="archbang"
-        art=[
-            "{$cyan}        /\\        "
-            "{$cyan}       / _\\       "
-            "{$cyan}      /  \\ /      "
-            "{$cyan}     /   // \\     "
-            "{$cyan}    /   //   \\    "
-            "{$cyan}   / ___()___ \\   "
-            "{$cyan}  /.`      `/.\\  "
-        ]
-        margin=[3 2 3]
-    }
-
-    %{  id="archcraft"
-        art=[
-            "{$green}      .      "
-            "{$green}     / \\     "
-            "{$green}    /\\  \\    "
-            "{$green}   /     \\   "
-            "{$green}  / , ^ , \\  "
-            "{$green} /  <   > -\\ "
-            "{$green}/_-''   ''-_\\"
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id=["arco" "arcolinux"]
-        art=[
-            "{$blue}          A          "
-            "{$blue}         ooo         "
-            "{$blue}        ooooo        "
-            "{$blue}       ooooooo       "
-            "{$blue}      ooooooooo      "
-            "{$blue}     ooooo ooooo     "
-            "{$blue}    ooooo   ooooo    "
-            "{$blue}   ooooo     ooooo   "
-            "{$blue}  ooooo  {$green}oooooooooo  "
-            "{$blue} ooooo      {$green}oooooooo "
-            "{$blue}ooooo          {$green}oooooo"
-        ]
-        margin=[1 2 2]
-    }
-
-    %{  id="artix"
-        art=[
-            "{$blue}      /\\      "
-            "{$blue}     /  \\     "
-            "{$blue}    /`'.,\\    "
-            "{$blue}   /     ',   "
-            "{$blue}  /      ,`\\  "
-            "{$blue} /   ,.'`.  \\ "
-            "{$blue}/.,'`     `'.\\"
-        ]
-        margin=[2 2 2]
-    }
-
-    ; ### B ###
-
-    %{  id="bedrock"
-        art=[
-            "{$white}__       "
-            "{$white}\\ \\___   "
-            "{$white} \\  _ \\  "
-            "{$white}  \\___/  "
-        ]
-        margin=[4 3 3]
-    }
-
-    %{  id="buildroot"
-        art=[
-            "{$yellow}   ___     "
-            "{$yellow} / \\`   \\  "
-            "{$yellow}|   :  :|  "
-            "{$yellow} -. _:__.- "
-            "{$yellow} ` ---- `"
-        ]
-        margin=[3 3 3]
-    }
-
-    ; ### C ###
-
-    %{  id=["cachy" "cachyos"]
-        art=[
-            "{$cyan}   /''''''''''''/  "
-            "{$cyan}  /''''''''''''/   "
-            "{$cyan} /''''''/          "
-            "{$cyan}/''''''/           "
-            "{$cyan}\\......\\           "
-            "{$cyan} \\......\\          "
-            "{$cyan}  \\.............../  "
-            "{$cyan}   \\............./ "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="centos"
-        art=[
-            "{$green} ____{$yellow}^{$magenta}____  "
-            "{$green} |\\  {$yellow}|{$magenta}  /|  "
-            "{$green} | \\ {$yellow}|{$magenta} / |  "
-            "{$magenta}<---- {$blue}----> "
-            "{$blue} | / {$green}|{$yellow} \\ |  "
-            "{$blue} |/__{$green}|{$yellow}__\\|  "
-            "{$green}     v      "
-        ]
-        margin=[2 3 2]
-    }
-
-    %{  id="crux"
-        art=[
-            "{$blue}    ___   "
-            "{$blue}   (.· |  "
-            "{$blue}   ({$yellow}<>{$blue} |  "
-            "{$blue}  / {$white}__{$blue}  \\ "
-            "{$blue} ( {$white}/  \\{$blue} /|"
-            "{$yellow}_/\\{$white}(__){$yellow}/_)"
-            "{$yellow}\\/{$blue}-____{$yellow}\\/ "
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id="crystal"
-        art=[
-            "{$magenta}        -//. "
-            "{$magenta}      -//.   "
-            "{$magenta}    -//. .   "
-            "{$magenta}  -//.  '//- "
-            "{$magenta} /+:      :+/"
-            "{$magenta}  .//'  .//. "
-            "{$magenta}    . .//.   "
-            "{$magenta}    .//.     "
-            "{$magenta}  .//.       "
-        ]
-        margin=[2 2 2]
-    }
-
-    ; ### D ###
-
-    %{  id=["dahlia" "dahliaos"]
-        art=[
-            "{$red}      _       "
-            "{$red}  ___/ \\___   "
-            "{$red} |   _-_   |  "
-            "{$red} | /     \\ |  "
-            "{$red}/ |       | \\ "
-            "{$red}\\ |       | / "
-            "{$red} | \\ _ _ / |  "
-            "{$red} |___ - ___|  "
-            "{$red}     \\_/      "
-        ]
-        margin=[1 4 3]
-    }
-
-    %{  id="debian"
-        art=[
-            "{$red}  , - = - ,   "
-            "{$red} =    ,,   =  "
-            "{$red}=   :°   ;  = "
-            "{$red}=   :.      = "
-            "{$red}^=    ° == °  "
-            "{$red}°=.           "
-            "{$red} ^==..        "
-            "{$red}   ^^°==..    "
-            "{$red}        ^^°=  "
-        ]
-        margin=[1 2 3]
-    }
-
-    %{  id="deepin"
-        art=[
-            "{$blue}    ____________    "
-            "{$blue}   /  /  /   ___\\   "
-            "{$blue}  /   | / __/ ___\\  "
-            "{$blue} /     \\/ / /     \\ "
-            "{$blue}|        \\   \\     |"
-            "{$blue} \\_______/  _/    / "
-            "{$blue}  \\________/     /  "
-            "{$blue}   \\____________/   "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="devuan"
-        art=[
-            "..:::.      "
-            "    ..-==-  "
-            "        .+#:"
-            "         =@@"
-            "      :+%@#:"
-            ".:=+#@@%*:  "
-            "@@@@#=:     "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id=["dragonfly" "dragonflybsd"]
-        art=[
-            "   ,{$red}_{$white},    "
-            "('-_{$red}|{$white}_-') "
-            " >--{$red}|{$white}--<  "
-            "(_-'{$red}|{$white}'-_) "
-            "    {$red}|     "
-            "    {$red}|     "
-            "    {$red}|     "
-        ]
-        margin=[2 3 2]
-    }
-
-    ; ### E ###
-
-    %{  id=["elementary" "elementaryos"]
-        art=[
-            "{$white}  _______  "
-            "{$white} / ____  \\ "
-            "{$white}/  |  /  /\\"
-            "{$white}|__\\ /  / |"
-            "{$white}\\   /__/  /"
-            "{$white} \\_______/ "
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id=["endeavour" "endeavouros"]
-        art=[
-            "{$magenta}       /\\     "
-            "{$red}     /{$magenta}/  \\{$cyan}\\   "
-            "{$red}    /{$magenta}/    \\{$cyan}\\  "
-            "{$red}  / {$magenta}/     _) {$cyan})"
-            "{$red} /_{$magenta}/___-- {$cyan}__- "
-            "{$cyan}/____--       "
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id=["evolution" "evolutionos"]
-        art=[
-            "{$green}      $2,coddoc'                "
-            "{$green}   'cddddddddddc'               "
-            "{$green} 'ddd$1OWWXXXXXXK$2ddo.         "
-            "{$green}.dddd$1OMX$2ddddddddddd.        "
-            "{$green}odddd$1OMX$2k$100O$2k$1OO$2ddddo"
-            "{$green}.dddd$1OMX$2kOOOxOkdddd.        "
-            "{$green} .ddd$1OWW$2X$1XXXXXK$2ddd'     "
-            "{$green}   'dddddddddddd'               "
-            "{$green}      'cddddd,                  "
-        ]
-        margin=[2 3 3]
-    }
-
-    ; ### F ###
-
-    %{  id="fedora"
-        art=[
-            "{$white}       _____  "
-            "{$white}     /   __){$blue}\\ "
-            "{$white}     |  /  {$blue}\\ \\"
-            "{$blue}  __{$white}_|  |_{$blue}_/ /"
-            "{$blue} / {$white}(_    _){$blue}_/ "
-            "{$blue}/ /  {$white}|  |     "
-            "{$blue}\\ \\{$white}__/  |     "
-            "{$blue} \\{$white}(_____/     "
-        ]
-        margin=[1 2 3]
-    }
-
-    %{  id="freebsd"
-        art=[
-            "{$red}/\\,-'''''-,/\\  "
-            "{$red}\\_)       (_/  "
-            "{$red}|           |  "
-            "{$red}|           |  "
-            " {$red};         ;   "
-            "  {$red}'-_____-'    "
-        ]
-        margin=[2 4 2]
-    }
-
-    ; ### G ###
-
-    %{  id="garuda"
-        art=[
-            "{$magenta}     .----.   "
-            "{$magenta}   .'   ,  '. "
-            "{$magenta} .'    '-----|"
-            "{$magenta}'.   -----,   "
-            "{$magenta}  '.____.'    "
-        ]
-        margin=[3 2 3]
-    }
-
-    %{  id="gentoo"
-        art=[
-            "{$magenta} _-----_   "
-            "{$magenta}(       \\  "
-            "{$magenta}\\    0   \\ "
-            "{$white} \\        )"
-            "{$white} /      _/ "
-            "{$white}(     _-   "
-            "{$white}\\____-     "
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id="guix"
-        art=[
-            "{$yellow}|.__          __.| "
-            "{$yellow}|__ \\        / __| "
-            "{$yellow}   \\ \\      / /    "
-            "{$yellow}    \\ \\    / /     "
-            "{$yellow}     \\ \\  / /      "
-            "{$yellow}      \\ \\/ /       "
-            "{$yellow}       \\__/        "
-        ]
-        margin=[3 2 3]
-    }
-
-    ; ### H ###
-
-    %{  id="hyperbola"
-        art=[
-            "    |`__.`/  "
-            "    \\____/   "
-            "    .--.     "
-            "   /    \\    "
-            "  /  ___ \\   "
-            " / .`   `.\\  "
-            "/.`      `.\\  "
-        ]
-        margin=[2 2 3]
-    }
-
-    ; ### I ###
-
-    %{  id="iglunix"
-        art=[
-            "       |              "
-            "       |          |   "
-            "                  |   "
-            "  |    ________       "
-            "  |  /\\   |    \\      "
-            "    /  \\  |     \\  |  "
-            "   /    \\        \\ |  "
-            "  /      \\________\\   "
-            "  \\      /        /   "
-            "   \\    /        /    "
-            "    \\  /        /     "
-            "     \\/________/      "
-        ]
-        margin=[0 2 2]
-    }
-
-    %{  id=["instant" "instantos"]
-        art=[
-            "{$white} ,-''-,      "
-            "{$white}: .''. :     "
-            "{$white}: ',,' :     "
-            "{$white} '-____:__   "
-            "{$white}       :  `."
-            "{$white}       `._.'  "
-        ]
-        margin=[3 2 2]
-    }
-
-    ; ### K ###
-
-    %{  id="kali"
-        art=[
-            "{$blue}        ⢀ ⡀        "
-            "{$blue}     ⢀⡀⢀⡀⢣⡐⣄       "
-            "{$blue}  ⢤⣬⣿⣿⣿⣿⣿⣶⣿⣮⣷⣄     "
-            "{$blue} ⢴⣿⣿⠛⠉  ⠈⠉⠻⣿⣿⣿⣷⣄   "
-            "{$blue}⢠⣿⣿⡇        ⢿⣿⣦⣿⣦  "
-            "{$blue} ⡸⣿⣷⡀        ⠙⠻⣿⣷⡀ "
-            "{$blue}  ⠸⠻⣿⣦⡀        ⠈⢻⣿⠇"
-            "{$blue}     ⠉⠛⠷⣦⣄⡀     ⠈⠁ "
-            "{$blue}         ⠉⠛⢷⣄      "
-            "{$blue}            ⠈⢿     "
-        ]
-        margin=[0 1 2]
-    }
-
-    %{  id=["neon" "kdeneon"]
-        art=[
-            "{$green}    --- _   "
-            "{$green} /  ---  \\  "
-            "{$green}|  |   |  | "
-            "{$green} \\  --- _/  "
-            "{$green}    ---     "
-        ]
-        margin=[3 3 3]
-    }
-
-    ; ### L ###
-
-    %{  id=["lite" "linuxlite"]
-        art=[
-            "{$yellow}   /\\ "
-            "{$yellow}  /  \\"
-            "{$yellow} / {$white}/ {$yellow}/"
-            "{$yellow}> {$white}/ {$yellow}/ "
-            "{$yellow}\\ {$white}\\ {$yellow}\\ "
-            " {$yellow}\\_{$white}\\{$yellow}_\\"
-            "{$white}    \\ "
-        ]
-        margin=[3 3 4]
-    }
-
-    ; ### M ###
-
-    %{  id="macos"
-        art=[
-            "{$green}       .:'      "
-            "{$green}    _ :'_       "
-            "{$yellow} .'\\`_\\`-'_\\`.  "
-            "{$red}:________.-'    "
-            "{$red}:________:      "
-            "{$magenta} :_______\\`-;   "
-            "{$blue}  \\`._.-._.'    "
-        ]
-        margin=[2 4 2]
-    }
-
-    %{  id="mageria"
-        art=[
-            "{$blue}   *     "
-            "{$blue}    *    "
-            "{$blue}   **    "
-            "{$black} /\\__/\\  "
-            "{$black}/      \\ "
-            "{$black}\\      / "
-            "{$black} \\____/  "
-        ]
-        margin=[2 4 3]
-    }
-
-    %{  id="manjaro"
-        art=[
-            "{$green}        {$reset}  {$green}    "
-            "{$green}        {$reset}  {$green}    "
-            "{$green}   {$reset}       {$green}    "
-            "{$green}   {$reset}  {$green}   {$reset}  {$green}    "
-            "{$green}   {$reset}  {$green}   {$reset}  {$green}    "
-            "{$green}   {$reset}  {$green}   {$reset}  {$green}    "
-        ]
-        margin=[2 2 4]
-    }
-
-    %{  id=["mint" "linuxmint"]
-        art=[
-            "{$cyan} ___________ "
-            "{$cyan}|_          \\"
-            "{$cyan}  | {$white}| _____ {$cyan}|"
-            "{$cyan}  | {$white}| | | | {$cyan}|"
-            "{$cyan}  | {$white}| | | | {$cyan}|"
-            "{$cyan}  | {$white}\\_____/ {$cyan}|"
-            "{$cyan}  \\_________/"
-        ]
-        margin=[2 2 4]
-    }
-
-    %{  id="mx"
-        art=[
-            "{$white}    \\\\  /    "
-            "{$white}     \\\\/     "
-            "{$white}      \\\\     "
-            "{$white}   /\\/ \\\\    "
-            "{$white}  /  \\  /\\   "
-            "{$white} /    \\/  \\  "
-            "{$white}/__________\\ "
-        ]
-        margin=[2 2 2]
-    }
-
-    ; ### N ###
-
-    %{  id="netbsd"
-        art=[
-            "{$white}\\\\{$yellow}\\`-______,----__  "
-            "{$white} \\\\        {$yellow}__,---\\`_"
-            "{$white}  \\\\       {$yellow}\\`.____  "
-            "{$white}   \\\\{$yellow}-______,----\\`-"
-            "{$white}    \\\\              "
-            "{$white}     \\\\             "
-            "{$white}      \\\\            "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="nobara"
-        art=[
-            "{$white} _._.  _..,._          "
-            "{$white}|##############.       "
-            "{$white}|################.     "
-            "{$white}|#####/  .  \\#####.    "
-            "{$white}|####|  ###   > ###    "
-            "{$white}|#####  \\`\\`\\`|##### "
-            "{$white}|######==_   |#####    "
-            "{$white}|######\"##|  |#####    "
-            "{$white} \\`\"\"\\`\\` '  \\`\\##/ "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="nixos"
-        art=[
-            "{$blue}     ⣀⡀  {$cyan}⣀⣀⡀ ⢀⣀     "
-            "{$blue}    ⠈⢿⣷⡀ {$cyan}⠈⢿⣷⣄⣾⡿⠃    "
-            "{$blue}  ⢀⣶⣶⣾⣿⣿⣶⣶⣮{$cyan}⣻⣿⣿⠁ {$blue}⢠⡀  "
-            "{$cyan}     ⣩⣭⡍    ⢻⣿⣆{$blue}⢠⣿⡗  "
-            "{$cyan}⢠⣤⣤⣤⣴⣿⠟      ⠹{$blue}⣳⣿⣿⣤⣤⡄"
-            "{$cyan}⠘⠛⠛⣿⣿⢯{$blue}⣦      ⣰⣿⠟⠛⠛⠛⠃"
-            "{$cyan}  ⢼⣿⠋{$blue}⠹⣿⣧{$cyan}⢀⣀⣀⣀⣜⣛⣋⣀⣀⡀  "
-            "{$cyan}  ⠈⠃ {$blue}⢀⣾⣿⣷{$cyan}⡻⠿⠿⢿⣿⡿⠿⠿⠁  "
-            "{$blue}    ⢠⣾⡿⠙⢿⣷⡀ {$cyan}⠈⢿⣷⡄    "
-            "{$blue}     ⠉⠁ ⠈⠉⠉  {$cyan}⠈⠉     "
-        ]
-        margin=[1 2 3]
-    }
-
-    %{  id="none"
-        art=[""]
-        margin=[0 0 0]
-    }
-
-    ; ### O ###
-
-    %{  id="openbsd"
-        art=[
-            "{$yellow}      _____    "
-            "{$yellow}    \\-     -/  "
-            "{$yellow} \\_/         \\ "
-            "{$yellow} |        {$white}O O{$yellow} |"
-            "{$yellow} |_  <   )  3 )"
-            "{$yellow} / \\         / "
-            " {$yellow}   /-_____-\\  "
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id=["opensuse" "opensuse_suse" "opensuse-tumbleweed"]
-        art=[
-            "{$reset}           .;ldkO0000Okdl;.           "
-            "{$reset}       .;d00xl:^''''''^:ok00d;.       "
-            "{$reset}     .d00l'                'o00d.     "
-            "{$reset}   .d0Kd'  {$green}Okxol:;,.          {$reset}:O0d.   "
-            "{$reset}  .OK{$green}KKK0kOKKKKKKKKKKOxo:,      {$reset}lK0.  "
-            "{$reset} ,0K{$green}KKKKKKKKKKKKKKKOP^{$reset},,,.{$green}^dx:    {$reset};OO, "
-            "{$reset}.OK{$green}KKKKKKKKKKKKKKKk'{$reset}.oOPPb.{$green}'Ok.   {$reset}cKO."
-            "{$reset}:KK{$green}KKKKKKKKKKKKKKK: {$reset}kKx..dd {$green}lKd   {$reset}'OK:"
-            "{$reset}dKK{$green}KKKKKKKKKOxOKKKd {$reset}^OKKKO' {$green}kKKc   {$reset}dKd"
-            "{$reset}dKK{$green}KKKKKKKKKK;.;oOKx,..{$reset}^{$green}..;kKKKO.  {$reset}dKd"
-            "{$reset}:KK{$green}KKKKKKKKKK0o;...^cdxxOK0O/^^'  {$reset}.OK:"
-            "{$reset} kKK{$green}KKKKKKKKKKKKKOx;,,......,;od  {$reset}lKk "
-            "{$reset} '0K{$green}KKKKKKKKKKKKKKKKKKKK00KKOo^  {$reset}c00' "
-            "{$reset}  'kK{$green}KKOxddxkOO00000Okxoc;''   {$reset}.dKk'  "
-            "{$reset}    l0Ko.                    .c00l'   "
-            "{$reset}     'l0Kk:.              .;xK0l'     "
-            "{$reset}        'lkK0xl:;,,,,;:ldO0kl'        "
-            "{$reset}            '^:ldxkkkkxdl:^'          "
-        ]
-        margin=[0 0 2]
-    }
-
-    ; ### P ###
-
-    %{  id="parabola"
-        art=[
-            "  __ __ __  _  "
-            "`_//_//_/ / `. "
-            "          /  .`"
-            "         / .`  "
-            "        /.`    "
-            "       /`      "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id=["pop" "popos" "pop_os"]
-        art=[
-            "{$cyan}  ______             "
-            "{$cyan}  \\   _ \\        __  "
-            "{$cyan}   \\ \\ \\ \\      / /  "
-            "{$cyan}    \\ \\_\\ \\    / /   "
-            "{$cyan}     \\  ___\\  /_/    "
-            "{$cyan}      \\ \\    _       "
-            "{$cyan}     __\\_\\__(_)_     "
-            "{$cyan}    (___________)    "
-        ]
-        margin=[1 1 2]
-    }
-
-    %{  id="postmarketos"
-        art=[
-            "{$green}        /\\        "
-            "{$green}       /  \\       "
-            "{$green}      /    \\      "
-            "{$green}      \\__   \\     "
-            "{$green}    /\\__ \\  _\\    "
-            "{$green}   /   /  \\/ __   "
-            "{$green}  /   / ____/  \\  "
-            "{$green} /    \\ \\       \\ "
-            "{$green}/_____/ /________\\"
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="pureos"
-        art=[
-            " _____________ "
-            "|  _________  |"
-            "| |         | |"
-            "| |         | |"
-            "| |_________| |"
-            "|_____________|"
-        ]
-        margin=[3 2 2]
-    }
-
-    ; ### R ###
-
-    %{  id=["raspbian" "raspberrypios"]
-        art=[
-            "{$green}  __  __   "
-            "{$green} (_\\)(/_)  "
-            "{$red} (_(__)_)  "
-            "{$red}(_(_)(_)_) "
-            "{$red} (_(__)_)  "
-            "{$red}   (__)    "
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id=["reborn" "rebornos"]
-        art=[
-            "{$blue}   _______   "
-            "{$blue}  /\\_____/\\  "
-            "{$blue} / /\\___/\\ \\ "
-            "{$blue}/_/_/   \\_\\_\\"
-            "{$blue}\\ \\ \\___/ / /"
-            "{$blue} \\ \\/___\\/ / "
-            "{$blue}  \\/_____\\/  "
-        ]
-        margin=[2 3 3]
-    }
-
-    %{  id="rocky"
-        art=[
-            "{$green}    `-/+++++++++/-.`     "
-            "{$green} `-+++++++++++++++++-`   "
-            "{$green}.+++++++++++++++++++++.  "
-            "{$green}-+++++++++++++++++++++++."
-            "{$green}+++++++++++++++/-/+++++++"
-            "{$green}+++++++++++++/.   ./+++++"
-            "{$green}+++++++++++:.       ./+++"
-            "{$green}+++++++++:`   `:/:`   .:/"
-            "{$green}-++++++:`   .:+++++:`    "
-            "{$green} .+++-`   ./+++++++++:`  "
-            "{$green}  `-`   ./+++++++++++-   "
-            "{$green}       -+++++++++:-.`    "
-        ]
-        margin=[1 2 3]
-    }
-
-    ; ### S ###
-
-    %{  id="slackware"
-        art=[
-            "{$blue}   ________  "
-            "{$blue}  /  ______| "
-            "{$blue}  | |______  "
-            "{$blue}  \\______  \\ "
-            "{$blue}   ______| | "
-            "{$blue}| |________/ "
-            "{$blue}|____________"
-        ]
-        margin=[2 2 3]
-    }
-
-    %{  id="solus"
-        art=[
-            "{$blue}     /|       "
-            "{$blue}    / |\\      "
-            "{$blue}   /  | \\ _   "
-            "{$blue}  /___|__\\_\\  "
-            "{$blue}  \\         / "
-            "{$blue}   \\-------'  "
-        ]
-        margin=[3 2 2]
-    }
-
-    %{  id="sourcemage"
-        art=[
-            "       :ymNMNho.              "
-            ".+sdmNMMMMMMMMMMy`            "
-            ".-::/yMMMMMMMMMMMm-           "
-            "      sMMMMMMMMMMMm/          "
-            "     /NMMMMMMMMMMMMMm:        "
-            "    .MMMMMMMMMMMMMMMMM:       "
-            "    `MMMMMMMMMMMMMMMMMN.      "
-            "     NMMMMMMMMMMMMMMMMMd      "
-            "     mMMMMMMMMMMMMMMMMMMo     "
-            "     hhMMMMMMMMMMMMMMMMMM.    "
-            "     .`/MMMMMMMMMMMMMMMMMs    "
-            "        :mMMMMMMMMMMMMMMMN`   "
-            "         `sMMMMMMMMMMMMMMM+   "
-            "           /NMMMMMMMMMMMMMN`  "
-            "             oMMMMMMMMMMMMM+  "
-            "          ./sd.-hMMMMMMMMmmN` "
-            "      ./+oyyyh- `MMMMMMMMMmNh "
-            "                 sMMMMMMMMMmmo"
-            "                 `NMMMMMMMMMd:"
-            "                  -dMMMMMMMMMo"
-            "                    -shmNMMms."
-        ]
-        margin=[0 2 3]
-    }
-
-    ; ### T ###
-
-    %{  id=["tux" "default"]
-        art=[
-            "{$bright_black}       .--.     "
-            "{$bright_black}      |{$white}o{$yellow}_{$white}o {$bright_black}|    "
-            "{$bright_black}      |{$yellow}:_/ {$bright_black}|    "
-            "{$bright_black}     /{$white}/   \\ {$bright_black}\\   "
-            "{$bright_black}    ({$white}|     | {$bright_black})  "
-            "{$bright_black}   {$yellow}/'/|_   _/'\\ "
-            "{$bright_black}   {$yellow}\\___){$bright_black}={$yellow}(____/  "
-        ]
-        margin=[2 2 3]
-    }
-
-    ; ### U ###
-
-    %{  id="ubuntu"
-        art=[
-            "{$red}                .-.   "
-            "{$red}        .-'````(   )  "
-            "{$red}     ,`\\ \\    `-`.    "
-            "{$red}    /   \\ '````-.   ` "
-            "{$red}  .-.  ,         `___:"
-            "{$red} (   ) :          ___ "
-            "{$red}  `-`  `         ,   :"
-            "{$red}    \\   / ,....-`   , "
-            "{$red}     `./ /      .-.`  "
-            "{$red}        `-....-(   )  "
-            "{$red}                `-`   "
-        ]
-        margin=[0 2 4]
-    }
-
-    ; ### V ###
-
-    %{  id=["vanilla" "vanillaos"]
-        art=[
-            "{$yellow}        .#.           "
-            "{$yellow}       :#=#:          "
-            "{$yellow}.#=\":.:##=##:.:\"=#.   "
-            "{$yellow}\\`:#=#####=####=##:\\` "
-            "{$yellow} \\`:####=\\` \\`=####:\\`"
-            "{$yellow}   .:##,. .,##:.      "
-            "{$yellow}  :##=##:-:##=##:     "
-            "{$yellow} .#=##:\\`   \\`:##=#.  "
-            "{$yellow}  \\`\\`           \\`\\` "
-        ]
-        margin=[2 2 2]
-    }
-
-    %{  id="venom"
-        art=[
-            "{$white} ++**               "
-            "{$white}  *===**====+*      "
-            "{$white}   *====*   +===+   "
-            "{$white} *==*+===*    *===* "
-            "{$white}*===* *===+    *===*"
-            "{$white}*===*  +===+   *===*"
-            "{$white}*===*   +===*  *===*"
-            "{$white} *===*    *===+*==* "
-            "{$white}   +===+   *===+=*  "
-            "{$white}      *+====**===*  "
-            "{$white}               **++ "
-        ]
-        margin=[1 2 3]
-    }
-
-    %{  id="void"
-        art=[
-            "{$green}    _______  "
-            "{$green} _ \\______ - "
-            "{$green}| \\  ___  \\ |"
-            "{$green}| | /   \\ | |"
-            "{$green}| | \\___/ | |"
-            "{$green}| \\______ \\_|"
-            "{$green} -_______\\   "
-        ]
-        margin=[2 2 4]
-    }
-
-    %{  id="voyager"
-        art=[
-            "{$red} _____   ____ "
-            "{$red}|     | |    |"
-            "{$red}|     | |    |"
-            "{$red}|     | |    |"
-            "{$red}|     | |____|"
-            "{$red}|     | _____ "
-            "{$red}|     ||     |"
-            "{$red}|_____||_____|"
-        ]
-        margin=[2 2 2]
-    }
-
-    ; ### X ###
-
-    %{  id=["xero" "xerolinux"]
-        art=[
-            "{$white}        /\\       "
-            "{$white}______ /  \\______"
-            "{$white}      /\\  /\\     "
-            "{$white}     /  ||  \\    "
-            "{$white}____/__/__\\__\\___"
-            "{$white}   / __|  |__-\\  "
-            "{$white}  /_-''    ''-_\\ "
-        ]
-        margin=[3 2 2]
-    }
-
-    ; ### Z ###
-
-    %{  id="zorin"
-        art=[
-            "{$blue}    ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆    "
-            "{$blue}   ⠐⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠂   "
-            "{$blue}                    "
-            "{$blue} ⣴⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁  ⣀⣤⣶⣦ "
-            "{$blue}⢼⣿⣿⣿⣿⣿⠿⠋⠁  ⢀⣠⣶⣿⣿⣿⣿⣿⡇"
-            "{$blue} ⠹⣿⠛⠉   ⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⠟ "
-            "{$blue}                    "
-            "{$blue}   ⠠⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⠄   "
-            "{$blue}    ⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏    "
-        ]
-        margin=[1 1 2]
-    }
-
+# This is the distro logos file for catnap.
+# Here you can configure all distro logos
+# or add a new one.
+#
+# https://github.com/iinsertNameHere/catnap
+
+##############################################
+##         Distro ASCII-Art Config          ##
+##############################################
+
+### A ###
+[alpine]
+margin = [3, 2, 2,]
+art = [
+  "{BE}    /\\ /\\    ",
+  "{BE}   // \\  \\   ",
+  "{BE}  //   \\  \\  ",
+  "{BE} ///    \\  \\ ",
+  "{BE}///      \\  \\",
+]
+
+[amogos]
+margin = [1, 2, 3,]
+art = [
+  "{RD}      -///:.   ",
+  "{RD}     smhhhhmh\\`",
+  "{RD}    :NA{BE}mogO{RD}SNs ",
+  "{RD}    hNNmmmmNNN ",
+  "{RD}    NNNNNNNNNN ",
+  "{RD}   :NNNNNNNNNN ",
+  "{RD}   mNNssussNNN ",
+  "{RD}  sNn:    sNNo ",
+  "{RD}+ooo+     sNNo ",
+  "{RD}        +oooo\\`",
+]
+
+[android]
+margin = [2, 2, 2,]
+art = [
+  "{GN}  ;,           ,;  ",
+  "{GN}   ';,.-----.,;'   ",
+  "{GN}  ,'           ',  ",
+  "{GN} /    O     O    \\ ",
+  "{GN}|                 |",
+  "{GN}'-----------------'",
+]
+
+[arch]
+margin = [2, 2, 3,]
+art = [
+  "(RD)        /\\        ",
+  "(RD)       /  \\       ",
+  "(RD)      /\\   \\      ",
+  "(RD)     /      \\     ",
+  "(RD)    /   ,,   \\    ",
+  "(RD)   /   |  |  -\\   ",
+  "(RD)  /_-''    ''-_\\  ",
+]
+
+[arch_old]
+margin = [1, 2, 3,]
+art = [
+  "(BE)     -+*##*+-        ",
+  "(BE)   -+#######*={BK}:      ",
+  "(BE)  -+*******+++={BK}+*+   ",
+  "(BE) -++++++++=====- {BK}**+-",
+  "(BE) =++==+     =====-{BK}-==",
+  "(BE)+++++         +++-{BK}---",
+  "(BE)++++        {BK}+++(BE)+++{BK}=  ",
+  "(BE)****   {BK}******+  (BE)**   ",
+  "(BE)***              *   ",
+]
+
+[archbang]
+margin = [3, 2, 3,]
+art = [
+  "{CN}        /\\        ",
+  "{CN}       / _\\       ",
+  "{CN}      /  \\ /      ",
+  "{CN}     /   // \\     ",
+  "{CN}    /   //   \\    ",
+  "{CN}   / ___()___ \\   ",
+  "{CN}  /.\\`      `/.\\  ",
+]
+
+[archcraft]
+margin = [2, 2, 3,]
+art = [
+  "{GN}      .      ",
+  "{GN}     / \\     ",
+  "{GN}    /\\  \\    ",
+  "{GN}   /     \\   ",
+  "{GN}  / , ^ , \\  ",
+  "{GN} /  <   > -\\ ",
+  "{GN}/_-''   ''-_\\",
+]
+
+[arco]
+alias = "arcolinux"
+margin = [1, 2, 2,]
+art = [
+  "{BE}          A          ",
+  "{BE}         ooo         ",
+  "{BE}        ooooo        ",
+  "{BE}       ooooooo       ",
+  "{BE}      ooooooooo      ",
+  "{BE}     ooooo ooooo     ",
+  "{BE}    ooooo   ooooo    ",
+  "{BE}   ooooo     ooooo   ",
+  "{BE}  ooooo  {GN}oooooooooo  ",
+  "{BE} ooooo      {GN}oooooooo ",
+  "{BE}ooooo          {GN}oooooo",
+]
+
+[artix]
+margin = [2, 2, 2,]
+art = [
+  "{BE}      /\\      ",
+  "{BE}     /  \\     ",
+  "{BE}    /`'.,\\    ",
+  "{BE}   /     ',   ",
+  "{BE}  /      ,`\\  ",
+  "{BE} /   ,.'`.  \\ ",
+  "{BE}/.,'`     `'.\\",
+]
+
+### B ####
+[bedrock]
+margin = [4, 3, 3,]
+art = ["{WE}__       ", "{WE}\\ \\___   ", "{WE} \\  _ \\  ", "{WE}  \\___/  "]
+
+[buildroot]
+margin = [3, 3, 3,]
+art = [
+  "{YW}   ___     ",
+  "{YW} / \\`   \\  ",
+  "{YW}|   :  :|  ",
+  "{YW} -. _:__.- ",
+  "{YW} \\` ---- \\`",
+]
+
+### C ####
+[cachy]
+alias = "cachyos"
+margin = [2, 2, 2,]
+art = [
+  "{CN}   /''''''''''''/  ",
+  "{CN}  /''''''''''''/   ",
+  "{CN} /''''''/          ",
+  "{CN}/''''''/           ",
+  "{CN}\\......\\           ",
+  "{CN} \\......\\          ",
+  "{CN}  \\.............../",
+  "{CN}   \\............./ ",
+]
+
+[centos]
+margin = [2, 3, 2,]
+art = [
+  "{GN} ____{YW}^{MA}____  ",
+  "{GN} |\\  {YW}|{MA}  /|  ",
+  "{GN} | \\ {YW}|{MA} / |  ",
+  "{MA}<---- {BE}----> ",
+  "{BE} | / {GN}|{YW} \\ |  ",
+  "{BE} |/__{GN}|{YW}__\\|  ",
+  "{GN}     v      ",
+]
+
+[crux]
+margin = [2, 2, 3,]
+art = [
+  "{BE}    ___   ",
+  "{BE}   (.· |  ",
+  "{BE}   ({YW}<>{BE} |  ",
+  "{BE}  / {WE}__{BE}  \\ ",
+  "{BE} ( {WE}/  \\{BE} /|",
+  "{YW}_/\\{WE}(__){YW}/_)",
+  "{YW}\\/{BE}-____{YW}\\/ ",
+]
+
+[crystal]
+margin = [2, 2, 2,]
+art = [
+  "(MA)        -//. ",
+  "(MA)      -//.   ",
+  "(MA)    -//. .   ",
+  "(MA)  -//.  '//- ",
+  "(MA) /+:      :+/",
+  "(MA)  .//'  .//. ",
+  "(MA)    . .//.   ",
+  "(MA)    .//.     ",
+  "(MA)  .//.       ",
+]
+
+### D ###
+[dahlia]
+alias = "dahliaos"
+margin = [1, 4, 3,]
+art = [
+  "{RD}      _       ",
+  "{RD}  ___/ \\___   ",
+  "{RD} |   _-_   |  ",
+  "{RD} | /     \\ |  ",
+  "{RD}/ |       | \\ ",
+  "{RD}\\ |       | / ",
+  "{RD} | \\ _ _ / |  ",
+  "{RD} |___ - ___|  ",
+  "{RD}     \\_/      ",
+]
+
+[debian]
+margin = [1, 2, 3,]
+art = [
+  "(RD)  , - = - ,   ",
+  "(RD) =    ,,   =  ",
+  "(RD)=   :°   ;  = ",
+  "(RD)=   :.      = ",
+  "(RD)^=    ° == °  ",
+  "(RD)°=.           ",
+  "(RD) ^==..        ",
+  "(RD)   ^^°==..    ",
+  "(RD)        ^^°=  ",
+]
+
+[deepin]
+margin = [2, 2, 2,]
+art = [
+  "{BE}    ____________    ",
+  "{BE}   /  /  /   ___\\   ",
+  "{BE}  /   | / __/ ___\\  ",
+  "{BE} /     \\/ / /     \\ ",
+  "{BE}|        \\   \\     |",
+  "{BE} \\_______/  _/    / ",
+  "{BE}  \\________/     /  ",
+  "{BE}   \\____________/   ",
+]
+
+[devuan]
+margin = [2, 2, 2,]
+art = [
+  "..:::.      ",
+  "    ..-==-  ",
+  "        .+#:",
+  "         =@@",
+  "      :+%@#:",
+  ".:=+#@@%*:  ",
+  "@@@@#=:     ",
+]
+
+[dragonfly]
+alias = "dragonflybsd"
+margin = [2, 3, 2,]
+art = [
+  "   ,{RD}_{WE},    ",
+  "('-_{RD}|{WE}_-') ",
+  " >--{RD}|{WE}--<  ",
+  "(_-'{RD}|{WE}'-_) ",
+  "    {RD}|     ",
+  "    {RD}|     ",
+  "    {RD}|     ",
+]
+
+### E ###
+[elementary]
+alias = "elementaryos"
+margin = [2, 2, 3,]
+art = [
+  "{WE}  _______  ",
+  "{WE} / ____  \\ ",
+  "{WE}/  |  /  /\\",
+  "{WE}|__\\ /  / |",
+  "{WE}\\   /__/  /",
+  "{WE} \\_______/ ",
+]
+
+[endeavour]
+alias = "endeavouros"
+margin = [2, 2, 3,]
+art = [
+  "{MA}       /\\     ",
+  "{RD}     /{MA}/  \\{CN}\\   ",
+  "{RD}    /{MA}/    \\{CN}\\  ",
+  "{RD}  / {MA}/     _) {CN})",
+  "{RD} /_{MA}/___-- {CN}__- ",
+  "{CN}/____--       ",
+]
+
+[evolution]
+alias = "evolutionos"
+margin = [2, 3, 3,]
+art = [
+  "{GN}      $2,coddoc'                ",
+  "{GN}   'cddddddddddc'               ",
+  "{GN} 'ddd$1OWWXXXXXXK$2ddo.         ",
+  "{GN}.dddd$1OMX$2ddddddddddd.        ",
+  "{GN}odddd$1OMX$2k$100O$2k$1OO$2ddddo",
+  "{GN}.dddd$1OMX$2kOOOxOkdddd.        ",
+  "{GN} .ddd$1OWW$2X$1XXXXXK$2ddd'     ",
+  "{GN}   'dddddddddddd'               ",
+  "{GN}      'cddddd,                  ",
+]
+
+### F ###
+[fedora]
+margin = [1, 2, 3,]
+art = [
+  "(WE)       _____  ",
+  "(WE)     /   __)(BE)\\ ",
+  "(WE)     |  /  (BE)\\ \\",
+  "(BE)  __(WE)_|  |_(BE)_/ /",
+  "(BE) / (WE)(_    _)(BE)_/ ",
+  "(BE)/ /  (WE)|  |     ",
+  "(BE)\\ \\(WE)__/  |     ",
+  "(BE) \\(WE)(_____/     ",
+
+]
+
+[freebsd]
+margin = [2, 4, 2,]
+art = [
+  "{RD}/\\,-'''''-,/\\  ",
+  "{RD}\\_)       (_/  ",
+  "{RD}|           |  ",
+  "{RD}|           |  ",
+  " {RD};         ;   ",
+  "  {RD}'-_____-'    ",
+]
+
+### G ###
+[garuda]
+margin = [3, 2, 3,]
+art = [
+  "(MA)     .----.   ",
+  "(MA)   .'   ,  '. ",
+  "(MA) .'    '-----|",
+  "(MA)'.   -----,   ",
+  "(MA)  '.____.'    ",
+]
+
+[gentoo]
+margin = [2, 2, 3,]
+art = [
+  "{MA} _-----_   ",
+  "{MA}(       \\  ",
+  "{MA}\\    0   \\ ",
+  "{WE} \\        )",
+  "{WE} /      _/ ",
+  "{WE}(     _-   ",
+  "{WE}\\____-     ",
+]
+
+[guix]
+margin = [3, 2, 3,]
+art = [
+  "{YW}|.__          __.| ",
+  "{YW}|__ \\        / __| ",
+  "{YW}   \\ \\      / /    ",
+  "{YW}    \\ \\    / /     ",
+  "{YW}     \\ \\  / /      ",
+  "{YW}      \\ \\/ /       ",
+  "{YW}       \\__/        ",
+]
+
+### H ###
+[hyperbola]
+margin = [2, 2, 3,]
+art = [
+  "    |`__.`/  ",
+  "    \\____/   ",
+  "    .--.     ",
+  "   /    \\    ",
+  "  /  ___ \\   ",
+  " / .`   `.\\  ",
+  "/.`      `.\\ ",
+]
+
+### I ###
+[iglunix]
+margin = [0, 2, 2,]
+art = [
+  "       |              ",
+  "       |          |   ",
+  "                  |   ",
+  "  |    ________       ",
+  "  |  /\\   |    \\      ",
+  "    /  \\  |     \\  |  ",
+  "   /    \\        \\ |  ",
+  "  /      \\________\\   ",
+  "  \\      /        /   ",
+  "   \\    /        /    ",
+  "    \\  /        /     ",
+  "     \\/________/      ",
+]
+
+[instant]
+alias = "instantos"
+margin = [3, 2, 2,]
+art = [
+  "{WE} ,-''-,      ",
+  "{WE}: .''. :     ",
+  "{WE}: ',,' :     ",
+  "{WE} '-____:__   ",
+  "{WE}       :  \\`.",
+  "{WE}       \\`._.'",
+]
+
+### J ###
+
+### K ###
+[kali]
+margin = [0, 1, 2,]
+art = [
+  "{BE}        ⢀ ⡀        ",
+  "{BE}     ⢀⡀⢀⡀⢣⡐⣄       ",
+  "{BE}  ⢤⣬⣿⣿⣿⣿⣿⣶⣿⣮⣷⣄     ",
+  "{BE} ⢴⣿⣿⠛⠉  ⠈⠉⠻⣿⣿⣿⣷⣄   ",
+  "{BE}⢠⣿⣿⡇        ⢿⣿⣦⣿⣦  ",
+  "{BE} ⡸⣿⣷⡀        ⠙⠻⣿⣷⡀ ",
+  "{BE}  ⠸⠻⣿⣦⡀        ⠈⢻⣿⠇",
+  "{BE}     ⠉⠛⠷⣦⣄⡀     ⠈⠁ ",
+  "{BE}         ⠉⠛⢷⣄      ",
+  "{BE}            ⠈⢿     ",
+]
+
+[neon]
+alias = "kdeneon"
+margin = [3, 3, 3,]
+art = [
+  "{GN}    --- _   ",
+  "{GN} /  ---  \\  ",
+  "{GN}|  |   |  | ",
+  "{GN} \\  --- _/  ",
+  "{GN}    ---     ",
+]
+
+### L ###
+[lite]
+alias = "linuxlite"
+margin = [3, 3, 4,]
+art = [
+  "{YW}   /\\ ",
+  "{YW}  /  \\",
+  "{YW} / {WE}/ {YW}/",
+  "{YW}> {WE}/ {YW}/ ",
+  "{YW}\\ {WE}\\ {YW}\\ ",
+  " {YW}\\_{WE}\\{YW}_\\",
+  "{WE}    \\ ",
+]
+
+
+### M ###
+[macos]
+margin = [2, 4, 2,]
+art = [
+  "{GN}       .:'      ",
+  "{GN}    _ :'_       ",
+  "{YW} .'\\`_\\`-'_\\`.  ",
+  "{RD}:________.-'    ",
+  "{RD}:________:      ",
+  "{MA} :_______\\`-;   ",
+  "{BE}  \\`._.-._.'    ",
+]
+
+[mageria]
+margin = [2, 4, 3,]
+art = [
+  "{BE}   *     ",
+  "{BE}    *    ",
+  "{BE}   **    ",
+  "{BK} /\\__/\\  ",
+  "{BK}/      \\ ",
+  "{BK}\\      / ",
+  "{BK} \\____/  ",
+]
+
+[manjaro]
+margin = [2, 2, 4,]
+art = [
+  "<GN>        !DT!  <GN>    ",
+  "<GN>        !DT!  <GN>    ",
+  "<GN>   !DT!       <GN>    ",
+  "<GN>   !DT!  <GN>   !DT!  <GN>    ",
+  "<GN>   !DT!  <GN>   !DT!  <GN>    ",
+  "<GN>   !DT!  <GN>   !DT!  <GN>    ",
+]
+
+[mint]
+alias = "linuxmint"
+margin = [2, 2, 4,]
+art = [
+  "{CN} ___________ ",
+  "{CN}|_          \\",
+  "{CN}  | (WE)| _____ {CN}|",
+  "{CN}  | (WE)| | | | {CN}|",
+  "{CN}  | (WE)| | | | {CN}|",
+  "{CN}  | (WE)\\_____/ {CN}|",
+  "{CN}  \\_________/",
+]
+
+[mx]
+margin = [2, 2, 2,]
+art = [
+  "{WE}    \\\\  /    ",
+  "{WE}     \\\\/     ",
+  "{WE}      \\\\     ",
+  "{WE}   /\\/ \\\\    ",
+  "{WE}  /  \\  /\\   ",
+  "{WE} /    \\/  \\  ",
+  "{WE}/__________\\ ",
+]
+
+
+### N ###
+[netbsd]
+margin = [2, 2, 2,]
+art = [
+  "{WE}\\\\{YW}\\`-______,----__  ",
+  "{WE} \\\\        {YW}__,---\\`_",
+  "{WE}  \\\\       {YW}\\`.____  ",
+  "{WE}   \\\\{YW}-______,----\\`-",
+  "{WE}    \\\\              ",
+  "{WE}     \\\\             ",
+  "{WE}      \\\\            ",
+]
+
+[nobara]
+margin = [2, 2, 2,]
+art = [
+  "{WE} _._.  _..,._          ",
+  "{WE}|##############.       ",
+  "{WE}|################.     ",
+  "{WE}|#####/  .  \\#####.    ",
+  "{WE}|####|  ###   > ###    ",
+  "{WE}|#####  \\`\\`\\`|##### ",
+  "{WE}|######==_   |#####    ",
+  "{WE}|######\"##|  |#####    ",
+  "{WE} \\`\"\"\\`\\` '  \\`\\##/ ",
+]
+
+[none]
+margin = [0, 0, 0,]
+art = [""]
+
+[nixos]
+margin = [1, 2, 3,]
+art = [
+  "{BE}     ⣀⡀  {CN}⣀⣀⡀ ⢀⣀     ",
+  "{BE}    ⠈⢿⣷⡀ {CN}⠈⢿⣷⣄⣾⡿⠃    ",
+  "{BE}  ⢀⣶⣶⣾⣿⣿⣶⣶⣮{CN}⣻⣿⣿⠁ {BE}⢠⡀  ",
+  "{CN}     ⣩⣭⡍    ⢻⣿⣆{BE}⢠⣿⡗  ",
+  "{CN}⢠⣤⣤⣤⣴⣿⠟      ⠹{BE}⣳⣿⣿⣤⣤⡄",
+  "{CN}⠘⠛⠛⣿⣿⢯{BE}⣦      ⣰⣿⠟⠛⠛⠛⠃",
+  "{CN}  ⢼⣿⠋{BE}⠹⣿⣧{CN}⢀⣀⣀⣀⣜⣛⣋⣀⣀⡀  ",
+  "{CN}  ⠈⠃ {BE}⢀⣾⣿⣷{CN}⡻⠿⠿⢿⣿⡿⠿⠿⠁  ",
+  "{BE}    ⢠⣾⡿⠙⢿⣷⡀ {CN}⠈⢿⣷⡄    ",
+  "{BE}     ⠉⠁ ⠈⠉⠉  {CN}⠈⠉     ",
+]
+
+### O ###
+[openbsd]
+margin = [2, 2, 3,]
+art = [
+  "{YW}      _____    ",
+  "{YW}    \\-     -/  ",
+  "{YW} \\_/         \\ ",
+  "{YW} |        {WE}O O{YW} |",
+  "{YW} |_  <   )  3 )",
+  "{YW} / \\         / ",
+  " {YW}   /-_____-\\  ",
+]
+
+[opensuse]
+margin = [0, 0, 2,]
+art = [
+  "!DT!           .;ldkO0000Okdl;.           ",
+  "!DT!       .;d00xl:^''''''^:ok00d;.       ",
+  "!DT!     .d00l'                'o00d.     ",
+  "!DT!   .d0Kd'  (GN)Okxol:;,.          !DT!:O0d.   ",
+  "!DT!  .OK(GN)KKK0kOKKKKKKKKKKOxo:,      !DT!lK0.  ",
+  "!DT! ,0K(GN)KKKKKKKKKKKKKKKOP^!DT!,,,(GN)^dx:    !DT!;OO, ",
+  "!DT!.OK(GN)KKKKKKKKKKKKKKKk'!DT!.oOPPb.(GN)'Ok.   !DT!cKO.",
+  "!DT!:KK(GN)KKKKKKKKKKKKKKK: !DT!kKx..dd (GN)lKd   !DT!'OK:",
+  "!DT!dKK(GN)KKKKKKKKKOxOKKKd !DT!^OKKKO' (GN)kKKc   !DT!dKd",
+  "!DT!dKK(GN)KKKKKKKKKK;.;oOKx,..!DT!^(GN)..;kKKKO.  !DT!dKd",
+  "!DT!:KK(GN)KKKKKKKKKK0o;...^cdxxOK0O/^^'  !DT!.OK:",
+  "!DT! kKK(GN)KKKKKKKKKKKKKOx;,,......,;od  !DT!lKk ",
+  "!DT! '0K(GN)KKKKKKKKKKKKKKKKKKKK00KKOo^  !DT!c00' ",
+  "!DT!  'kK(GN)KKOxddxkOO00000Okxoc;''   !DT!.dKk'  ",
+  "!DT!    l0Ko.                    .c00l'   ",
+  "!DT!     'l0Kk:.              .;xK0l'     ",
+  "!DT!        'lkK0xl:;,,,,;:ldO0kl'        ",
+  "!DT!            '^:ldxkkkkxdl:^'          ",
+]
+
+### P ###
+[parabola]
+margin = [2, 2, 2,]
+art = [
+  "  __ __ __  _  ",
+  "`_//_//_/ / `. ",
+  "          /  .`",
+  "         / .`  ",
+  "        /.`    ",
+  "       /`      ",
+]
+
+[pop]
+alias = "popos, pop_os"
+margin = [1, 1, 2,]
+art = [
+  "{CN}  ______             ",
+  "{CN}  \\   _ \\        __  ",
+  "{CN}   \\ \\ \\ \\      / /  ",
+  "{CN}    \\ \\_\\ \\    / /   ",
+  "{CN}     \\  ___\\  /_/    ",
+  "{CN}      \\ \\    _       ",
+  "{CN}     __\\_\\__(_)_     ",
+  "{CN}    (___________)    ",
+]
+
+[postmarketos]
+margin = [2, 2, 2,]
+art = [
+  "{GN}        /\\        ",
+  "{GN}       /  \\       ",
+  "{GN}      /    \\      ",
+  "{GN}      \\__   \\     ",
+  "{GN}    /\\__ \\  _\\    ",
+  "{GN}   /   /  \\/ __   ",
+  "{GN}  /   / ____/  \\  ",
+  "{GN} /    \\ \\       \\ ",
+  "{GN}/_____/ /________\\",
+]
+
+[pureos]
+margin = [3, 2, 2,]
+art = [
+  " _____________ ",
+  "|  _________  |",
+  "| |         | |",
+  "| |         | |",
+  "| |_________| |",
+  "|_____________|",
+]
+
+### Q ###
+
+### R ###
+[raspbian]
+alias = "raspberrypios"
+margin = [2, 2, 3,]
+art = [
+  "{GN}  __  __   ",
+  "{GN} (_\\)(/_)  ",
+  "{RD} (_(__)_)  ",
+  "{RD}(_(_)(_)_) ",
+  "{RD} (_(__)_)  ",
+  "{RD}   (__)    ",
+]
+
+[reborn]
+alias = "rebornos"
+margin = [2, 3, 3,]
+art = [
+  "{BE}   _______   ",
+  "{BE}  /\\_____/\\  ",
+  "{BE} / /\\___/\\ \\ ",
+  "{BE}/_/_/   \\_\\_\\",
+  "{BE}\\ \\ \\___/ / /",
+  "{BE} \\ \\/___\\/ / ",
+  "{BE}  \\/_____\\/  ",
+]
+
+[rocky]
+margin = [1, 2, 3,]
+art = [
+  "{GN}    `-/+++++++++/-.`     ",
+  "{GN} `-+++++++++++++++++-`   ",
+  "{GN}.+++++++++++++++++++++.  ",
+  "{GN}-+++++++++++++++++++++++.",
+  "{GN}+++++++++++++++/-/+++++++",
+  "{GN}+++++++++++++/.   ./+++++",
+  "{GN}+++++++++++:.       ./+++",
+  "{GN}+++++++++:`   `:/:`   .:/",
+  "{GN}-++++++:`   .:+++++:`    ",
+  "{GN} .+++-`   ./+++++++++:`  ",
+  "{GN}  `-`   ./+++++++++++-   ",
+  "{GN}       -+++++++++:-.`    ",
+]
+
+### S ###
+[slackware]
+margin = [2, 2, 3,]
+art = [
+  "{BE}   ________  ",
+  "{BE}  /  ______| ",
+  "{BE}  | |______  ",
+  "{BE}  \\______  \\ ",
+  "{BE}   ______| | ",
+  "{BE}| |________/ ",
+  "{BE}|____________",
+]
+
+[solus]
+margin = [3, 2, 2,]
+art = [
+  "{BE}     /|       ",
+  "{BE}    / |\\      ",
+  "{BE}   /  | \\ _   ",
+  "{BE}  /___|__\\_\\  ",
+  "{BE}  \\         / ",
+  "{BE}   \\-------´  ",
+]
+
+[sourcemage]
+margin = [0, 2, 3,]
+art = [
+  "       :ymNMNho.              ",
+  ".+sdmNMMMMMMMMMMy`            ",
+  ".-::/yMMMMMMMMMMMm-           ",
+  "      sMMMMMMMMMMMm/          ",
+  "     /NMMMMMMMMMMMMMm:        ",
+  "    .MMMMMMMMMMMMMMMMM:       ",
+  "    `MMMMMMMMMMMMMMMMMN.      ",
+  "     NMMMMMMMMMMMMMMMMMd      ",
+  "     mMMMMMMMMMMMMMMMMMMo     ",
+  "     hhMMMMMMMMMMMMMMMMMM.    ",
+  "     .`/MMMMMMMMMMMMMMMMMs    ",
+  "        :mMMMMMMMMMMMMMMMN`   ",
+  "         `sMMMMMMMMMMMMMMM+   ",
+  "           /NMMMMMMMMMMMMMN`  ",
+  "             oMMMMMMMMMMMMM+  ",
+  "          ./sd.-hMMMMMMMMmmN` ",
+  "      ./+oyyyh- `MMMMMMMMMmNh ",
+  "                 sMMMMMMMMMmmo",
+  "                 `NMMMMMMMMMd:",
+  "                  -dMMMMMMMMMo",
+  "                    -shmNMMms.",
+]
+
+### T ###
+[tux]
+alias = "default"
+margin = [2, 2, 3,]
+art = [
+  "(BK)      .--.     ",
+  "(BK)     |!DT!o(BK)_!DT!o (BK)|    ",
+  "(BK)     |(YW):_/ (BK)|    ",
+  "(BK)    /!DT!/   \\ (BK)\\   ",
+  "(BK)   (!DT!|     | (BK))  ",
+  "(YW)  /'!DT!|_   _/(YW)'\\  ",
+  "(YW)  \\___)(BK)=(YW)(___/  ",
+]
+
+### U ###
+[ubuntu]
+margin = [0, 2, 4,]
+art = [
+  "{RD}                .-.   ",
+  "{RD}        .-'````(   )  ",
+  "{RD}     ,`\\ \\    `-`.    ",
+  "{RD}    /   \\ '````-.   ` ",
+  "{RD}  .-.  ,         `___:",
+  "{RD} (   ) :          ___ ",
+  "{RD}  `-`  `         ,   :",
+  "{RD}    \\   / ,....-`   , ",
+  "{RD}     `./ /      .-.`  ",
+  "{RD}        `-....-(   )  ",
+  "{RD}                `-`   ",
+]
+
+### V ###
+[vanilla]
+alias = "vanillaos"
+margin = [2, 2, 2,]
+art = [
+  "{YW}        .#.           ",
+  "{YW}       :#=#:          ",
+  "{YW}.#=\":.:##=##:.:\"=#.   ",
+  "{YW}\\`:#=#####=####=##:\\` ",
+  "{YW} \\`:####=\\` \\`=####:\\`",
+  "{YW}   .:##,. .,##:.      ",
+  "{YW}  :##=##:-:##=##:     ",
+  "{YW} .#=##:\\`   \\`:##=#.  ",
+  "{YW}  \\`\\`           \\`\\` ",
+]
+
+[venom]
+margin = [1, 2, 3,]
+art = [
+  "{WE} ++**               ",
+  "{WE}  *===**====+*      ",
+  "{WE}   *====*   +===+   ",
+  "{WE} *==*+===*    *===* ",
+  "{WE}*===* *===+    *===*",
+  "{WE}*===*  +===+   *===*",
+  "{WE}*===*   +===*  *===*",
+  "{WE} *===*    *===+*==* ",
+  "{WE}   +===+   *===+=*  ",
+  "{WE}      *+====**===*  ",
+  "{WE}               **++ ",
+]
+
+[void]
+margin = [2, 2, 4,]
+art = [
+  "(GN)    _______  ",
+  "(GN) _ \\______ - ",
+  "(GN)| \\  ___  \\ |",
+  "(GN)| | /   \\ | |",
+  "(GN)| | \\___/ | |",
+  "(GN)| \\______ \\_|",
+  "(GN) -_______\\   ",
+]
+
+[voyager]
+margin = [2, 2, 2,]
+art = [
+  "{RD} _____   ____ ",
+  "{RD}|     | |    |",
+  "{RD}|     | |    |",
+  "{RD}|     | |    |",
+  "{RD}|     | |____|",
+  "{RD}|     | _____ ",
+  "{RD}|     ||     |",
+  "{RD}|_____||_____|",
+
+]
+
+### W ###
+
+### X ###
+[xero]
+alias = "xerolinux"
+margin = [3, 2, 2,]
+art = [
+  "{WE}        /\\       ",
+  "{WE}______ /  \\______",
+  "{WE}      /\\  /\\     ",
+  "{WE}     /  ||  \\    ",
+  "{WE}____/__/__\\__\\___",
+  "{WE}   / __|  |__-\\  ",
+  "{WE}  /_-''    ''-_\\ ",
+]
+
+### Y ###
+
+### Z ###
+[zorin]
+margin = [1, 1, 2,]
+art = [
+  "(BE)    ⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆    ",
+  "(BE)   ⠐⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠂   ",
+  "(BE)                    ",
+  "(BE) ⣴⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁  ⣀⣤⣶⣦ ",
+  "(BE)⢼⣿⣿⣿⣿⣿⠿⠋⠁  ⢀⣠⣶⣿⣿⣿⣿⣿⡇",
+  "(BE) ⠹⣿⠛⠉   ⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⠟ ",
+  "(BE)                    ",
+  "(BE)   ⠠⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⠄   ",
+  "(BE)    ⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏    ",
 ]
