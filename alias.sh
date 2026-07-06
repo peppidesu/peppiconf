@@ -18,7 +18,7 @@ fi
 
 # bat
 if command -v bat >/dev/null; then
-  alias cat="bat --theme gruvbox-dark"
+  alias cat="bat --theme auto --theme-dark everforest-dark --theme-light everforest-light"
 fi
 
 if command -v zeditor >/dev/null; then
@@ -34,5 +34,5 @@ fi
 alias testparrot="curl parrot.live"
 
 if command -v thorium-browser-avx2 >/dev/null; then
-    alias thorium-browser="thorium-browser-avx2"
+  alias thorium-browser="thorium-browser-avx2"
 fi
