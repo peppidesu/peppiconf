@@ -10,17 +10,14 @@ permission:
   acl: dark_red
   context: green
 date:
-  hour-old: blue
-  day-old: dark_blue
-  older: dark_grey
+  hour-old: cyan
+  day-old: blue
+  older: dark_blue
 size:
-  none: 245
+  none: grey
   small: green
   medium: yellow
   large: red
-inode:
-  valid: 13
-  invalid: 245
 links:
   valid: magenta
   invalid: dark_red
